@@ -649,7 +649,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'v1.3.2
+  m_Text: 'v1.3.3
 
 '
 --- !u!222 &563541174
@@ -1889,6 +1889,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2035505785665255253, guid: be989b33563d3954288a77dc409daf54,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2035505785665255255, guid: be989b33563d3954288a77dc409daf54,
         type: 3}
       propertyPath: m_Name
@@ -1977,7 +1982,7 @@ PrefabInstance:
     - target: {fileID: 2523904609596583441, guid: 32b02fab84f11a443a62fddc159a09bf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2523904609596583441, guid: 32b02fab84f11a443a62fddc159a09bf,
         type: 3}
@@ -2023,16 +2028,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpawnManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523904609596583446, guid: 32b02fab84f11a443a62fddc159a09bf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523904609596583447, guid: 32b02fab84f11a443a62fddc159a09bf,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32b02fab84f11a443a62fddc159a09bf, type: 3}

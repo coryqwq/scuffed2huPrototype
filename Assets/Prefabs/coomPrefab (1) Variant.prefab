@@ -10,17 +10,17 @@ PrefabInstance:
     - target: {fileID: 4042843126980491490, guid: 2531ac3216541704a90a56323f376da5,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.4481132
+      value: 0.32484868
       objectReference: {fileID: 0}
     - target: {fileID: 4042843126980491490, guid: 2531ac3216541704a90a56323f376da5,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.9273342
+      value: 0.8718635
       objectReference: {fileID: 0}
     - target: {fileID: 4042843126980491490, guid: 2531ac3216541704a90a56323f376da5,
         type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.9433962
       objectReference: {fileID: 0}
     - target: {fileID: 5339265141826787892, guid: 2531ac3216541704a90a56323f376da5,
         type: 3}
@@ -86,6 +86,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Projectile2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174428141435309997, guid: 2531ac3216541704a90a56323f376da5,
+        type: 3}
+      propertyPath: speed
+      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2531ac3216541704a90a56323f376da5, type: 3}

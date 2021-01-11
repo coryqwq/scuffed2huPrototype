@@ -49,9 +49,9 @@ MonoBehaviour:
   enemyPrefab:
   - {fileID: 3430291028866738583, guid: 6ecedefbdf928ee4db523489ec61e791, type: 3}
   - {fileID: 3150253516433629782, guid: 21ec3dc5d2fef8d4c81afbc22a96b65d, type: 3}
-  spawnX: 19
-  spawnY: 9
+  spawnX: 18
+  spawnY: 7
   startDelayAmmo: 1
-  spawnIntervalAmmo: 1.2
+  spawnIntervalAmmo: 1.1
   startDelayEnem: 2
-  spawnIntervalEnem: 1.8
+  spawnIntervalEnem: 1.5

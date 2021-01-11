@@ -105,12 +105,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xInput: 0
   yInput: 0
-  speedRun: 20
-  speedWalk: 7
+  speedRun: 22
+  speedWalk: 10
   projectilePrefab: {fileID: 8740282109521927093, guid: 2531ac3216541704a90a56323f376da5,
     type: 3}
-  ammoCount: 100
-  ammoCount2: 100
+  ammoCount: 120
+  ammoCount2: 120
   ammo1: {fileID: 0}
   ammo2: {fileID: 0}
   xRange: 20
@@ -126,7 +126,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.6, z: 0.2}
+  m_Size: {x: 1, y: 0.5, z: 0.2}
   m_Center: {x: 0.02, y: 0.05, z: 4}
 --- !u!54 &2956076341910471236
 Rigidbody:
@@ -136,7 +136,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2956076341910471234}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 0.0001
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -226,9 +226,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e5ea67549ac5c8940998c2f15f89855b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 978c6c534d1356742ad7d266136f41f0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.239
+  m_Volume: 0.328
   m_Pitch: 1
   Loop: 0
   Mute: 0
