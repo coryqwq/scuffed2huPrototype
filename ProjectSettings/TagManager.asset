@@ -11,6 +11,7 @@ TagManager:
   - Ammo
   - Ammo2
   - Gun2
+  - CurrentGun
   layers:
   - Default
   - TransparentFX

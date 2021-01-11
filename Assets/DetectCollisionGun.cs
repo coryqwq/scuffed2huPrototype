@@ -20,14 +20,17 @@ public class DetectCollisionGun : MonoBehaviour
         if (collision.CompareTag("Gun2"))
         {
             gunManagerScript.guns[1] = gun2;
-            Destroy(collision.gameObject);
 
             //check if the empty gameobject exists (which means player is empty handed), destroy empty gameobject and create gun
-            if(GameObject.Find("empty(Clone)") == true)
+            if (GameObject.Find("empty(Clone)") == true)
             {
-                gunManagerScript.DestroyGun();
                 gunManagerScript.temp[1] = Instantiate(gunManagerScript.guns[1], transform.position, transform.rotation);
+                Destroy(GameObject.Find("empty(Clone)"));
             }
+
+            Destroy(collision.gameObject);
+
+            
         }
     }
 }

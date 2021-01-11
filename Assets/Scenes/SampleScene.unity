@@ -649,7 +649,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'v1.3.1
+  m_Text: 'v1.3.2
 
 '
 --- !u!222 &563541174
@@ -1815,21 +1815,11 @@ PrefabInstance:
       propertyPath: score
       value: 
       objectReference: {fileID: 349702714}
-    - target: {fileID: 2956076341910471240, guid: 1c305bcc125f0244f93efb39741dc33b,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2956076341910471243, guid: 1c305bcc125f0244f93efb39741dc33b,
         type: 3}
       propertyPath: playerImage
       value: 
       objectReference: {fileID: 1288658136}
-    - target: {fileID: 2956076341910471243, guid: 1c305bcc125f0244f93efb39741dc33b,
-        type: 3}
-      propertyPath: healthBar.Array.size
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 2956076341910471243, guid: 1c305bcc125f0244f93efb39741dc33b,
         type: 3}
       propertyPath: healthBar.Array.data[0]
@@ -2033,6 +2023,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpawnManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523904609596583446, guid: 32b02fab84f11a443a62fddc159a09bf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523904609596583447, guid: 32b02fab84f11a443a62fddc159a09bf,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32b02fab84f11a443a62fddc159a09bf, type: 3}
