@@ -33,7 +33,7 @@ public class SpawnManager : MonoBehaviour
         {
             //declaring and initializing variables with randomized values within defined range
             int ammoIndex = Random.Range(0, ammoPrefabs.Length);
-            Vector2 spawnPos = new Vector2(Random.Range(-spawnX, spawnX), Random.Range(-spawnY, spawnY));
+            Vector2 spawnPos = new Vector2(Random.Range(-spawnX + 15.8f, spawnX), Random.Range(-spawnY, spawnY));
        
             //create ammo at random x,y location within defined range
             Instantiate(ammoPrefabs[ammoIndex], spawnPos, ammoPrefabs[ammoIndex].transform.rotation);
@@ -44,7 +44,7 @@ public class SpawnManager : MonoBehaviour
     {
         if(GameObject.Find("PlayerImage") != null)
         {
-            Vector2 spawnPos = new Vector2(Random.Range(-spawnX, spawnX), Random.Range(-spawnY, spawnY));
+            Vector2 spawnPos = new Vector2(Random.Range(-spawnX + 15.8f, spawnX), Random.Range(-spawnY, spawnY));
 
             int enemyIndex = Random.Range(0, enemyPrefab.Length);
 

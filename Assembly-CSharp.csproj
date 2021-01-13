@@ -76,6 +76,7 @@
     <Compile Include="Assets\FollowPlayer.cs" />
     <Compile Include="Assets\GunManager.cs" />
     <Compile Include="Assets\InvisibleMouse.cs" />
+    <Compile Include="Assets\MoveBG.cs" />
     <Compile Include="Assets\MoveForward.cs" />
     <Compile Include="Assets\PlayerAngle.cs" />
     <Compile Include="Assets\PlayerController.cs" />

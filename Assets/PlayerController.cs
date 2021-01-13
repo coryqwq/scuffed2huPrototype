@@ -18,9 +18,9 @@ public class PlayerController : MonoBehaviour
 
 
     //range the player can move on x axis
-    public float xRange = 20.0f;
+    public float xRange = 24.0f;
     //range the player can move on y axis
-    public float yRange = 11.25f;
+    public float yRange = 13.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -35,9 +35,9 @@ public class PlayerController : MonoBehaviour
         ammo2.text = "AMMO 2:" + ammoCount2;
 
         //keep player in bounds based on coordinate
-        if (transform.position.x < -xRange)
+        if (transform.position.x < -xRange + 15.8)
         {
-            transform.position = new Vector2(-xRange, transform.position.y);
+            transform.position = new Vector2(-xRange + 15.8f, transform.position.y);
         }
         if (transform.position.x > xRange)
         {

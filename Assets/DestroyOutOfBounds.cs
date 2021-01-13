@@ -5,8 +5,8 @@ using UnityEngine;
 public class DestroyOutOfBounds : MonoBehaviour
 {
     //declaring and initializing bound
-    public float xBound = 20;
-    public float yBound = 11.25f;
+    public float xBound = 24f;
+    public float yBound = 13.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,7 @@ public class DestroyOutOfBounds : MonoBehaviour
     void Update()
     {
         //check if position of projectile exceeds bounds on y axis
-        if (transform.position.x > xBound || transform.position.x < -xBound)
+        if (transform.position.x > xBound || transform.position.x < -xBound + 15.8f)
         {
             //destroy the projectile
             Destroy(gameObject);
