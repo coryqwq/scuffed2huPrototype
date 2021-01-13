@@ -6,6 +6,7 @@ public class Restart : MonoBehaviour
 {
     private int instance = 0;
     public GameObject canvas;
+    public AudioSource audio;
 
     public void Update()
     {
@@ -22,10 +23,17 @@ public class Restart : MonoBehaviour
             GameObject newCanvas = Instantiate(canvas) as GameObject;
         }
     }
+
+    public void playSound()
+    {
+        Instantiate(audio);
+        DontDestroyOnLoad(audio);
+    }
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);  
+        SceneManager.LoadScene("SampleScene");  
     }
+
     public void QuitGame()
     {
         Application.Quit();

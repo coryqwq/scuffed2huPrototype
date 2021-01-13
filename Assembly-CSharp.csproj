@@ -85,6 +85,7 @@
     <Compile Include="Assets\PlayerProjectileAngle.cs" />
     <Compile Include="Assets\Restart.cs" />
     <Compile Include="Assets\ScoreCounter.cs" />
+    <Compile Include="Assets\SoundFX.cs" />
     <Compile Include="Assets\SpawnManager.cs" />
     <Compile Include="Assets\eMoveForward.cs" />
     <Reference Include="UnityEngine">
