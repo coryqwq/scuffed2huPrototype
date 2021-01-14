@@ -199,7 +199,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2035505785665255338, guid: be989b33563d3954288a77dc409daf54,
           type: 3}
-        m_MethodName: QuitGame
+        m_MethodName: Title
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

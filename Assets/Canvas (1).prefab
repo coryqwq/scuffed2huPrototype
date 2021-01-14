@@ -146,8 +146,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4106954702374208953, guid: 8391881877df69344a91a6872a667be3,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: playSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106954702374208953, guid: 8391881877df69344a91a6872a667be3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Title
       objectReference: {fileID: 0}
     - target: {fileID: 4106954702374208953, guid: 8391881877df69344a91a6872a667be3,
         type: 3}

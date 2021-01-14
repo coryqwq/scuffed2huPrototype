@@ -83,11 +83,11 @@
     <Compile Include="Assets\PlayerFire.cs" />
     <Compile Include="Assets\PlayerFire2.cs" />
     <Compile Include="Assets\PlayerProjectileAngle.cs" />
-    <Compile Include="Assets\Restart.cs" />
+    <Compile Include="Assets\Scene.cs" />
     <Compile Include="Assets\ScoreCounter.cs" />
-    <Compile Include="Assets\SoundFX.cs" />
     <Compile Include="Assets\SpawnManager.cs" />
     <Compile Include="Assets\eMoveForward.cs" />
+    <Compile Include="Assets\konSfx.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -17,14 +17,17 @@ public class MoveBG : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //move image down
         transform.Translate(Vector2.left * Time.deltaTime * 40);
 
-        if(transform.position.y < -24  && spawned == false)
+        //spawn new image when current image is at -22 on the y axis
+        if(transform.position.y < -22  && spawned == false)
         {
-            Instantiate(bg, new Vector3(0, 47, 10), transform.rotation);
+            Instantiate(bg, new Vector3(0, 50, 10), transform.rotation);
             spawned = true;
         }
 
+        //destroy current image when it is at -60 on the y axis
         if(transform.position.y < -60)
         {
             Destroy(gameObject);
