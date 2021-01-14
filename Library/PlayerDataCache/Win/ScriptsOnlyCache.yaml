@@ -20,10 +20,11 @@ ScriptsOnlyBuild:
     - PlayerFire
     - PlayerFire2
     - PlayerProjectileAngle
-    - Restart
+    - Scene
     - ScoreCounter
     - SpawnManager
     - eMoveForward
+    - konSfx
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -132,11 +133,70 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14400}
     - Class: 114
       Script: {instanceID: 14452}
+    - Class: 114
+      Script: {instanceID: 131612}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 136
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/TitleScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11244}
+    - Class: 114
+      Script: {instanceID: 11246}
+    - Class: 114
+      Script: {instanceID: 11276}
+    - Class: 114
+      Script: {instanceID: 11618}
+    - Class: 114
+      Script: {instanceID: 12288}
+    - Class: 114
+      Script: {instanceID: 13442}
+    - Class: 114
+      Script: {instanceID: 13778}
+    - Class: 114
+      Script: {instanceID: 14074}
+    - Class: 114
+      Script: {instanceID: 14398}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -569,10 +629,10 @@ ScriptsOnlyBuild:
     className: DetectCollisionEnemy
   - hash:
       serializedVersion: 2
-      Hash: d0adc65b6f54d204e5a5dc174eb9a803
+      Hash: 6a98b73d5baeead1380a1d6abbf06c3e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Restart
+    className: Scene
   - hash:
       serializedVersion: 2
       Hash: 0ad7eebbf20456766f97be5ef678a721
@@ -771,8 +831,15 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: d2808b08c3c9238cf5cf40fe61852773
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: konSfx
   platform: 5
   scenePathNames:
+  - Assets/Scenes/TitleScene.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.3.2/2d
+  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.4.2/2d
     movement prototype.exe
