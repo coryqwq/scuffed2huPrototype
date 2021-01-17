@@ -27,7 +27,7 @@ public class PlayerFire : MonoBehaviour
         if (Input.GetMouseButton(0) && playerControllerScript.ammoCount != 0)
         {
             //create projectile
-            Instantiate(projectilePrefab, GameObject.Find("Player").transform.position, projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab, GameObject.Find("Player").transform.position, GameObject.Find("PlayerImage").transform.rotation);
             //decrement ammo by 1
             playerControllerScript.ammoCount -= 1;
         }

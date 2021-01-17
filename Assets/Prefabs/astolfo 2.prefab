@@ -16,6 +16,10 @@ GameObject:
   - component: {fileID: 3150253516433629788}
   - component: {fileID: 3150253516433629789}
   - component: {fileID: -5040014099697245879}
+  - component: {fileID: 39477862}
+  - component: {fileID: 8149160821465490923}
+  - component: {fileID: 7797992599366481666}
+  - component: {fileID: 6849228151496023723}
   m_Layer: 0
   m_Name: astolfo 2
   m_TagString: Untagged
@@ -32,7 +36,7 @@ Transform:
   m_GameObject: {fileID: 3150253516433629782}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.7, y: 6.76, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -76,8 +80,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6629d9d4bfcc6244987ce099c8a02ce1, type: 3}
-  m_Color: {r: 0.2599235, g: 0.41655913, b: 0.9339623, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b138d38f840b7d942a5b8b13af3c0b47, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -94,7 +98,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3150253516433629782}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 090ceeaea18934d45b4686165b7e5166, type: 3}
   m_Name: 
@@ -105,7 +109,7 @@ MonoBehaviour:
     type: 3}
   turnSpeed: 30
   angleDistance: 0
-  angleOffset: 10
+  angleOffset: 180
   i: 0
   angle: 0
 --- !u!65 &3150253516433629779
@@ -117,7 +121,7 @@ BoxCollider:
   m_GameObject: {fileID: 3150253516433629782}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.25, z: 0.2}
   m_Center: {x: 0, y: 0, z: 2}
@@ -165,6 +169,9 @@ MonoBehaviour:
   speed: 10
   xDistance: 5
   totalDistance: 0
+  xPos: -10
+  yPos: 0
+  a: 0
 --- !u!114 &-5040014099697245879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,3 +187,60 @@ MonoBehaviour:
   HP: 8
   ammoPack2: {fileID: 7083487330982451646, guid: 2779fe599af591e4eb59bc5694df5e6e,
     type: 3}
+--- !u!136 &39477862
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3150253516433629782}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 2.5
+  m_Direction: 0
+  m_Center: {x: 0, y: 0, z: 2}
+--- !u!114 &8149160821465490923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3150253516433629782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94555d76a2496b1458468975a62c95af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xPos: -12
+  yPos: 10
+  speed: 10
+--- !u!114 &7797992599366481666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3150253516433629782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c3b30dacff7e1468dedd1c1f0d4f91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startDelay: 0.5
+  spawnInterval: 0.5
+  projectilePrefab: {fileID: 8740282109521927093, guid: 9619560fb075cf242ba3d2adfa99fe45,
+    type: 3}
+--- !u!114 &6849228151496023723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3150253516433629782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f63ce71af9ec8b42927fccfa816b3f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

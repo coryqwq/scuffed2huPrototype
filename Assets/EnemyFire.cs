@@ -47,15 +47,11 @@ public class EnemyFire : MonoBehaviour
         
         
         //create projectiles
-        projectilePrefab.transform.rotation = Quaternion.AngleAxis(0 + angleOffset, Vector3.forward);
-        Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(0 + angleOffset, Vector3.forward));
 
-        
-        projectilePrefab.transform.rotation = Quaternion.AngleAxis(40 + angleOffset, Vector3.forward);
-        Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(40 + angleOffset, Vector3.forward));
 
-        projectilePrefab.transform.rotation = Quaternion.AngleAxis(-40 + angleOffset, Vector3.forward);
-        Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(-40 + angleOffset, Vector3.forward));
         
 
         /*

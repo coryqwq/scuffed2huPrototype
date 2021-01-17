@@ -13,13 +13,18 @@ public class InvisibleMouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Cursor.visible = false;
+
+        /*
         if(GameObject.Find("Player") == true)
         {
             Cursor.visible = false;
         }
+        /*
         if (GameObject.Find("Player") == false)
         {
             Cursor.visible = true;
         }
+        */
     }
 }

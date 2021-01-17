@@ -31,8 +31,10 @@ public class DetectCollisionEnemy : MonoBehaviour
             }
         }
 
+        //check if on collision with gameobject tagged "Bounds"
         if (collision.CompareTag("Bounds"))
         {
+            //destroy enemy gameobject
             Destroy(gameObject);
         }
     }

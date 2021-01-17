@@ -5,7 +5,7 @@ using UnityEngine;
 public class DetectCollisionEnemy2 : MonoBehaviour
 {
     //declaring and initializing variable
-    public float HP = 10;
+    public float HP = 8;
     public GameObject ammoPack2;
 
     // Start is called before the first frame update
@@ -25,8 +25,17 @@ public class DetectCollisionEnemy2 : MonoBehaviour
             if (HP == 0)
             {
                 Instantiate(ammoPack2, transform.position, transform.rotation);
+                ScoreCounter.number += 10;
                 Destroy(gameObject);
+
             }
+        }
+
+        //check if on collision with gameobject tagged "Bounds"
+        if (collision.CompareTag("Bounds"))
+        {
+            //destroy enemy gameobject
+            Destroy(gameObject);
         }
     }
 }
