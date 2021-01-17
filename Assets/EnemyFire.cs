@@ -12,17 +12,22 @@ public class EnemyFire : MonoBehaviour
     public float angleOffset = 180;
     private float angleBound = 360.0f;
 
+    public int i;
+    //public int[] angles = { 0, 45, 90, 135, 180, 225, 270, 315, 360 };
+    public int angle = 0;
+
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("FireGun", startDelay, spawnInterval);
     }
 
-    // Update is called once per frame
+ 
     void FireGun()
     {
         //calculate angles
-        
+
+        /*
         angleDistance += turnSpeed;
 
         if (angleDistance > angleBound)
@@ -38,18 +43,29 @@ public class EnemyFire : MonoBehaviour
         {
             angleOffset += turnSpeed;
         }
+        */
         
         
         //create projectiles
-        projectilePrefab.transform.rotation = Quaternion.AngleAxis(90 + angleOffset, Vector3.forward);
+        projectilePrefab.transform.rotation = Quaternion.AngleAxis(0 + angleOffset, Vector3.forward);
         Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
 
         
-        projectilePrefab.transform.rotation = Quaternion.AngleAxis(130 + angleOffset, Vector3.forward);
+        projectilePrefab.transform.rotation = Quaternion.AngleAxis(40 + angleOffset, Vector3.forward);
         Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
 
-        projectilePrefab.transform.rotation = Quaternion.AngleAxis(50 + angleOffset, Vector3.forward);
+        projectilePrefab.transform.rotation = Quaternion.AngleAxis(-40 + angleOffset, Vector3.forward);
         Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         
+
+        /*
+        for(i = 0; i < 8; i++)
+        {
+            projectilePrefab.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+
+            angle += 45;
+        }
+        */
     }
 }

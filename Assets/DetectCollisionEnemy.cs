@@ -6,11 +6,12 @@ public class DetectCollisionEnemy : MonoBehaviour
 {
     //declaring and initializing variable
     public float HP = 8;
+    public GameObject ammoPack1;
 
     // Start is called before the first frame update
     void Start()
     {
-
+       
     }
 
     private void OnTriggerEnter(Collider collision)
@@ -23,8 +24,16 @@ public class DetectCollisionEnemy : MonoBehaviour
             //if enemy health equals 0, destroy enemy gameobject
             if (HP == 0)
             {
+                Instantiate(ammoPack1, transform.position, transform.rotation);
+                ScoreCounter.number += 10;
                 Destroy(gameObject);
+
             }
+        }
+
+        if (collision.CompareTag("Bounds"))
+        {
+            Destroy(gameObject);
         }
     }
 }

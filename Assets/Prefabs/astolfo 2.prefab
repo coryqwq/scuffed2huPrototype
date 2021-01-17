@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 3150253516433629782}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.7, y: 6.76, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,13 +99,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090ceeaea18934d45b4686165b7e5166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDelay: 0.5
-  spawnInterval: 0.4
+  startDelay: 0.7
+  spawnInterval: 1
   projectilePrefab: {fileID: 8740282109521927093, guid: 9b7153817e64f0a498db2f13f3c23e65,
     type: 3}
   turnSpeed: 30
   angleDistance: 0
   angleOffset: 10
+  i: 0
+  angle: 0
 --- !u!65 &3150253516433629779
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -154,7 +156,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3150253516433629782}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f4edb14824d67f4987d8ce67771a56f, type: 3}
   m_Name: 
@@ -176,3 +178,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 8
+  ammoPack2: {fileID: 7083487330982451646, guid: 2779fe599af591e4eb59bc5694df5e6e,
+    type: 3}

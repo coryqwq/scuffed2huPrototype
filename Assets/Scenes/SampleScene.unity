@@ -972,6 +972,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bg: {fileID: 778007865}
   temp: {fileID: 0}
+  spawned: 0
+  speed: 40
 --- !u!1 &926150031
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,10 +2088,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1677204095, guid: 1c305bcc125f0244f93efb39741dc33b, type: 3}
-      propertyPath: m_Radius
-      value: 0.25
-      objectReference: {fileID: 0}
     - target: {fileID: 2956076341910471233, guid: 1c305bcc125f0244f93efb39741dc33b,
         type: 3}
       propertyPath: ammo1
@@ -2109,16 +2107,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2956076341910471239, guid: 1c305bcc125f0244f93efb39741dc33b,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2956076341910471239, guid: 1c305bcc125f0244f93efb39741dc33b,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 2956076341910471239, guid: 1c305bcc125f0244f93efb39741dc33b,
         type: 3}
@@ -2175,12 +2163,6 @@ PrefabInstance:
       propertyPath: score
       value: 
       objectReference: {fileID: 349702714}
-    - target: {fileID: 2956076341910471243, guid: 1c305bcc125f0244f93efb39741dc33b,
-        type: 3}
-      propertyPath: deathMsg
-      value: 
-      objectReference: {fileID: 8616045050362645594, guid: ebd38a87342812d48b80e2088a32d94b,
-        type: 3}
     - target: {fileID: 2956076341910471243, guid: 1c305bcc125f0244f93efb39741dc33b,
         type: 3}
       propertyPath: playerImage
@@ -2248,8 +2230,8 @@ PrefabInstance:
       objectReference: {fileID: 926150033}
     - target: {fileID: 2956076341910471247, guid: 1c305bcc125f0244f93efb39741dc33b,
         type: 3}
-      propertyPath: m_Volume
-      value: 0.787
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c305bcc125f0244f93efb39741dc33b, type: 3}
@@ -2403,6 +2385,11 @@ PrefabInstance:
         type: 3}
       propertyPath: spawnY
       value: 11.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523904609596583447, guid: 32b02fab84f11a443a62fddc159a09bf,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2523904609596583447, guid: 32b02fab84f11a443a62fddc159a09bf,
         type: 3}

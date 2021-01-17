@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3430291028866738589}
   - component: {fileID: 3430291028866738588}
   - component: {fileID: 3430291028866738591}
+  - component: {fileID: 203118405}
   m_Layer: 0
   m_Name: astolfo
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 3430291028866738583}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.7, y: 6.76, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -76,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6629d9d4bfcc6244987ce099c8a02ce1, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.090909004, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 470a8fdbb33ed074397c6b2a27a7e2b6, type: 3}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -99,13 +100,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090ceeaea18934d45b4686165b7e5166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDelay: 0.5
-  spawnInterval: 0.4
+  startDelay: 0.01
+  spawnInterval: 0.5
   projectilePrefab: {fileID: 8740282109521927093, guid: 9b7153817e64f0a498db2f13f3c23e65,
     type: 3}
   turnSpeed: 30
   angleDistance: 0
-  angleOffset: 10
+  angleOffset: 180
+  i: 0
+  angle: 0
 --- !u!65 &3430291028866738578
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -115,10 +118,10 @@ BoxCollider:
   m_GameObject: {fileID: 3430291028866738583}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1.28, y: 1.25, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 2}
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0.2, z: 2}
 --- !u!54 &3430291028866738579
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -160,9 +163,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnSpeed: 360
-  speed: 10
+  speed: 5
   xDistance: 5
   totalDistance: 0
+  xPos: -10
+  yPos: 0
+  a: 0.2
 --- !u!114 &3430291028866738591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,3 +182,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 8
+  ammoPack1: {fileID: 4745405707230597435, guid: d24f67eacec02e544bd46da45e73d365,
+    type: 3}
+--- !u!136 &203118405
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3430291028866738583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 2.5
+  m_Direction: 0
+  m_Center: {x: 0, y: 0.2, z: 2}

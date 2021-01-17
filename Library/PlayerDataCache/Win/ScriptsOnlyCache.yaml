@@ -473,7 +473,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 8a47e55c1303f44d33189fc0dc4a323b
+      Hash: b20ba269d8748f826dbfd6ee7ed398ff
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoveBG

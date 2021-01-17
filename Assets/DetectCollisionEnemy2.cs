@@ -6,6 +6,7 @@ public class DetectCollisionEnemy2 : MonoBehaviour
 {
     //declaring and initializing variable
     public float HP = 10;
+    public GameObject ammoPack2;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class DetectCollisionEnemy2 : MonoBehaviour
             //if enemy health equals 0, destroy enemy gameobject
             if (HP == 0)
             {
+                Instantiate(ammoPack2, transform.position, transform.rotation);
                 Destroy(gameObject);
             }
         }

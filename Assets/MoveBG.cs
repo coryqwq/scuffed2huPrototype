@@ -6,7 +6,8 @@ public class MoveBG : MonoBehaviour
 {
     public GameObject bg;
     public GameObject temp;
-    bool spawned = false;
+    public bool spawned = false;
+    public float speed = 35;
 
     // Start is called before the first frame update
     void Start()
@@ -18,12 +19,12 @@ public class MoveBG : MonoBehaviour
     void Update()
     {
         //move image down
-        transform.Translate(Vector2.left * Time.deltaTime * 40);
+        transform.Translate(Vector2.left * Time.deltaTime * speed);
 
         //spawn new image when current image is at -22 on the y axis
         if(transform.position.y < -22  && spawned == false)
         {
-            Instantiate(bg, new Vector3(0, 50, 10), transform.rotation);
+            Instantiate(bg, new Vector3(15, 50, 10), transform.rotation);
             spawned = true;
         }
 

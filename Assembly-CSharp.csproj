@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DestroyEnemyOutOfBounds.cs" />
     <Compile Include="Assets\DestroyOutOfBounds.cs" />
     <Compile Include="Assets\DetectCollisionAmmo.cs" />
     <Compile Include="Assets\DetectCollisionEnemy.cs" />
