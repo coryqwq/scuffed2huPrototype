@@ -53,14 +53,13 @@ public class PlayerController : MonoBehaviour
         }
 
         //declaring and initializing input variables
-        xInput = Input.GetAxis("Horizontal");
-        yInput = Input.GetAxis("Vertical");
+        xInput = Input.GetAxisRaw("Horizontal");
+        yInput = Input.GetAxisRaw("Vertical");
 
         if (Input.GetKey(KeyCode.LeftShift) != true)
         {
             //move player along x and y axis by the value of "speed" meters per second when activated by user input
-            transform.Translate(Vector2.up * Time.deltaTime * yInput * speedRun);
-            transform.Translate(Vector2.right * Time.deltaTime * xInput * speedRun);
+            transform.position = transform.position + new Vector3(Time.deltaTime * xInput * speedRun, Time.deltaTime * yInput * speedRun, 0);
         }
         else
         {
