@@ -8,7 +8,7 @@ public class KONSfx : MonoBehaviour
     public int index = 0;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         index = Random.Range(0, audioClips.Length);
         Instantiate(audioClips[index]);

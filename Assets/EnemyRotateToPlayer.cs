@@ -15,8 +15,6 @@ public class EnemyRotateToPlayer : MonoBehaviour
     {
         if(GameObject.Find("Player") != null)
         {
-            Vector3 mousePosition = Input.mousePosition;
-            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
             Vector2 direction = new Vector2(
             GameObject.Find("Player").transform.position.x - transform.position.x,
             GameObject.Find("Player").transform.position.y - transform.position.y

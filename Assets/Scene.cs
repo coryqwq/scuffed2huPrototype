@@ -41,6 +41,13 @@ public class Scene : MonoBehaviour
             SceneManager.LoadScene("SampleScene");
         }
     }
+    public void StartGame1()
+    {
+        if (audioClip.isPlaying != true)
+        {
+            SceneManager.LoadScene("SampleScene 1");
+        }
+    }
 
     //load current scene
     public void RestartGame()
@@ -59,7 +66,14 @@ public class Scene : MonoBehaviour
             SceneManager.LoadScene("TitleScene");
         }
     }
-    
+    public void LevelSelect()
+    {
+        if (audioClip.isPlaying != true)
+        {
+            SceneManager.LoadScene("TitleScene 1");
+        }
+    }
+
     //quit program
     public void QuitGame()
     {

@@ -211,7 +211,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 3989691841568026958, guid: be989b33563d3954288a77dc409daf54,
           type: 3}
-        m_MethodName: Title
+        m_MethodName: LevelSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

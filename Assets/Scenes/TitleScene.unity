@@ -222,7 +222,7 @@ RectTransform:
   m_Children:
   - {fileID: 806320776}
   m_Father: {fileID: 1108671374}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -284,7 +284,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 811768290}
-        m_MethodName: StartGame
+        m_MethodName: LevelSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -441,7 +441,7 @@ RectTransform:
   m_Children:
   - {fileID: 1414989318}
   m_Father: {fileID: 1108671374}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -930,8 +930,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 807403690}
   - {fileID: 213788890}
+  - {fileID: 807403690}
   - {fileID: 1760682679}
   - {fileID: 1446203247}
   m_Father: {fileID: 0}
@@ -1111,7 +1111,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: v1.5.0
+  m_Text: v1.6.0
 --- !u!222 &1446203250
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -86,6 +86,7 @@
     <Compile Include="Assets\KONSfx.cs" />
     <Compile Include="Assets\MoveBG.cs" />
     <Compile Include="Assets\MoveBG1.cs" />
+    <Compile Include="Assets\MoveBG2.cs" />
     <Compile Include="Assets\MoveForward.cs" />
     <Compile Include="Assets\PlayerAngle.cs" />
     <Compile Include="Assets\PlayerController.cs" />

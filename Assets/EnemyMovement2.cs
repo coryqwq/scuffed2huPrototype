@@ -19,11 +19,7 @@ public class EnemyMovement2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
-
         xPos += 1 * Time.deltaTime * speed;
         transform.localPosition = new Vector2(xPos, yPos);
-
-
     }
 }

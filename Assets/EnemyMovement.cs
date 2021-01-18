@@ -49,7 +49,5 @@ public class EnemyMovement : MonoBehaviour
         yPos = a * xPos * xPos;
 
         transform.localPosition = new Vector2( xPos, yPos);
-     
-
     }
 }
