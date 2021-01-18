@@ -6,7 +6,7 @@ public class Scene : MonoBehaviour
 {
     private int instance = 0;
     public GameObject canvas;
-    public AudioSource audio;
+    public AudioSource audioClip;
 
     //check to see if player is alive, if not, call method for displaying buttons for quit and retry on player death
     public void Update()
@@ -30,13 +30,13 @@ public class Scene : MonoBehaviour
     //play sound
     public void playSound()
     {
-        Instantiate(audio);
+        Instantiate(audioClip);
     }
 
     //load first level
     public void StartGame()
     {
-        if(audio.isPlaying != true)
+        if(audioClip.isPlaying != true)
         {
             SceneManager.LoadScene("SampleScene");
         }
@@ -45,7 +45,7 @@ public class Scene : MonoBehaviour
     //load current scene
     public void RestartGame()
     {
-        if(audio.isPlaying != true)
+        if(audioClip.isPlaying != true)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
@@ -54,7 +54,7 @@ public class Scene : MonoBehaviour
     //load title scene
     public void Title()
     {
-        if(audio.isPlaying != true)
+        if(audioClip.isPlaying != true)
         {
             SceneManager.LoadScene("TitleScene");
         }
@@ -63,7 +63,7 @@ public class Scene : MonoBehaviour
     //quit program
     public void QuitGame()
     {
-        if(audio.isPlaying != true)
+        if(audioClip.isPlaying != true)
         {
             Application.Quit();
         }

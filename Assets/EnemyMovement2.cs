@@ -6,14 +6,14 @@ public class EnemyMovement2 : MonoBehaviour
 {
 
     public float xPos = -10.0f;
-    public float yPos = 6f;
+    public float yPos = 8f;
     public float speed = 10.0f;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+      
     }
 
     // Update is called once per frame
@@ -22,7 +22,6 @@ public class EnemyMovement2 : MonoBehaviour
      
 
         xPos += 1 * Time.deltaTime * speed;
-
         transform.localPosition = new Vector2(xPos, yPos);
 
 

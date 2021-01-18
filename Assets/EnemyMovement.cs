@@ -10,9 +10,9 @@ public class EnemyMovement : MonoBehaviour
     public float xDistance = 0;
     public float totalDistance = 0;
 
-    public float xPos = -10.0f;
+    public float xPos = -4.0f;
     public float yPos = 0.2f;
-    public float a = 1;
+    public float a = 0.5f;
 
     // Start is called before the first frame update
     void Start()

@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDelay: 0.01
-  spawnInterval: 0.5
+  spawnInterval: 1
   projectilePrefab: {fileID: 8740282109521927093, guid: 9b7153817e64f0a498db2f13f3c23e65,
     type: 3}
   turnSpeed: 30
@@ -163,12 +163,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnSpeed: 360
-  speed: 5
+  speed: 2.5
   xDistance: 5
   totalDistance: 0
-  xPos: -10
+  xPos: -8
   yPos: 0
-  a: 0.2
+  a: 0.18
 --- !u!114 &3430291028866738591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,9 +181,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ab889ac4be37c479d6e58bd0f249bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 8
+  HP: 5
   ammoPack1: {fileID: 4745405707230597435, guid: d24f67eacec02e544bd46da45e73d365,
     type: 3}
+  temp: {fileID: 0}
+  spawnManagerScript: {fileID: 0}
 --- !u!136 &203118405
 CapsuleCollider:
   m_ObjectHideFlags: 0

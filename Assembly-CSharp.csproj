@@ -83,6 +83,7 @@
     <Compile Include="Assets\GunFollowPlayer.cs" />
     <Compile Include="Assets\GunManager.cs" />
     <Compile Include="Assets\InvisibleMouse.cs" />
+    <Compile Include="Assets\KONSfx.cs" />
     <Compile Include="Assets\MoveBG.cs" />
     <Compile Include="Assets\MoveBG1.cs" />
     <Compile Include="Assets\MoveForward.cs" />
@@ -93,9 +94,9 @@
     <Compile Include="Assets\PlayerProjectileAngle.cs" />
     <Compile Include="Assets\Scene.cs" />
     <Compile Include="Assets\ScoreCounter.cs" />
+    <Compile Include="Assets\SetRenderCamera.cs" />
     <Compile Include="Assets\SpawnManager.cs" />
     <Compile Include="Assets\eMoveForward.cs" />
-    <Compile Include="Assets\konSfx.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

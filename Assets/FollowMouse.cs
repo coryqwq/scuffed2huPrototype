@@ -16,6 +16,6 @@ public class FollowMouse : MonoBehaviour
         Vector3 mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
-        transform.position = mousePosition + new Vector3(0, 0, 1);
+        transform.position = mousePosition + new Vector3(0, 0, 2);
     }
 }

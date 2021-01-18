@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2763133534145014205}
   - component: {fileID: 2763133534145014202}
   - component: {fileID: 2763133534145014203}
+  - component: {fileID: 8544767185180247201}
   m_Layer: 5
   m_Name: Canvas (1)
   m_TagString: Untagged
@@ -27,7 +28,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2763133534145014200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -15}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1209106034146765166}
@@ -49,9 +50,9 @@ Canvas:
   m_GameObject: {fileID: 2763133534145014200}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 5
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -100,6 +101,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8544767185180247201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2763133534145014200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ce16c2b6ee9244180bb792a5e7508b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 2763133534145014205}
 --- !u!1001 &5909102412867293101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137,7 +151,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 2035505785665255338, guid: be989b33563d3954288a77dc409daf54,
+      objectReference: {fileID: 3989691841568026958, guid: be989b33563d3954288a77dc409daf54,
         type: 3}
     - target: {fileID: 4106954702374208953, guid: 8391881877df69344a91a6872a667be3,
         type: 3}
@@ -314,7 +328,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 2035505785665255338, guid: be989b33563d3954288a77dc409daf54,
+      objectReference: {fileID: 3989691841568026958, guid: be989b33563d3954288a77dc409daf54,
         type: 3}
     - target: {fileID: 7168937612597716403, guid: c43717e206b958f4bb70112d9b049336,
         type: 3}

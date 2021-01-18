@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class konSfx : MonoBehaviour
+public class KONSfx : MonoBehaviour
 {
-    public AudioSource[] audio;
-    int index;
+    public AudioSource[] audioClips;
+    public int index = 0;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        index = Random.Range(0, audio.Length);
-        Instantiate(audio[index]);
+        index = Random.Range(0, audioClips.Length);
+        Instantiate(audioClips[index]);
     }
 
     // Update is called once per frame

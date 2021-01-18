@@ -7,11 +7,13 @@ public class DetectCollisionEnemy2 : MonoBehaviour
     //declaring and initializing variable
     public float HP = 8;
     public GameObject ammoPack2;
+    public GameObject temp;
+    public SpawnManager spawnManagerScript;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        spawnManagerScript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
     }
 
     private void OnTriggerEnter(Collider collision)
@@ -24,8 +26,10 @@ public class DetectCollisionEnemy2 : MonoBehaviour
             //if enemy health equals 0, destroy enemy gameobject
             if (HP == 0)
             {
-                Instantiate(ammoPack2, transform.position, transform.rotation);
-                ScoreCounter.number += 10;
+                temp = Instantiate(ammoPack2, transform.position + new Vector3(0, 0, 1), ammoPack2.transform.rotation);
+                spawnManagerScript.StartCoroutine(spawnManagerScript.CountDown(temp));
+                ScoreCounter scoreCounterScript = GameObject.Find("Main Camera").GetComponent<ScoreCounter>();
+                scoreCounterScript.scoreNumber += 70;
                 Destroy(gameObject);
 
             }
