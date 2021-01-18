@@ -22,6 +22,7 @@ ScriptsOnlyBuild:
     - KONSfx
     - MoveBG
     - MoveBG1
+    - MoveBG2
     - MoveForward
     - PlayerAngle
     - PlayerController
@@ -56,6 +57,129 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/SampleScene 1.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 15412}
+    - Class: 114
+      Script: {instanceID: 15510}
+    - Class: 114
+      Script: {instanceID: 15604}
+    - Class: 114
+      Script: {instanceID: 15674}
+    - Class: 114
+      Script: {instanceID: 15706}
+    - Class: 114
+      Script: {instanceID: 15760}
+    - Class: 114
+      Script: {instanceID: 15950}
+    - Class: 114
+      Script: {instanceID: 15952}
+    - Class: 114
+      Script: {instanceID: 16030}
+    - Class: 114
+      Script: {instanceID: 16262}
+    - Class: 114
+      Script: {instanceID: 16410}
+    - Class: 114
+      Script: {instanceID: 16428}
+    - Class: 114
+      Script: {instanceID: 16526}
+    - Class: 114
+      Script: {instanceID: 16616}
+    - Class: 114
+      Script: {instanceID: 16726}
+    - Class: 114
+      Script: {instanceID: 16734}
+    - Class: 114
+      Script: {instanceID: 16752}
+    - Class: 114
+      Script: {instanceID: 16772}
+    - Class: 114
+      Script: {instanceID: 16852}
+    - Class: 114
+      Script: {instanceID: 17008}
+    - Class: 114
+      Script: {instanceID: 17140}
+    - Class: 114
+      Script: {instanceID: 17348}
+    - Class: 114
+      Script: {instanceID: 17420}
+    - Class: 114
+      Script: {instanceID: 17444}
+    - Class: 114
+      Script: {instanceID: 17546}
+    - Class: 114
+      Script: {instanceID: 17572}
+    - Class: 114
+      Script: {instanceID: 17590}
+    - Class: 114
+      Script: {instanceID: 17828}
+    - Class: 114
+      Script: {instanceID: 17860}
+    - Class: 114
+      Script: {instanceID: 17874}
+    - Class: 114
+      Script: {instanceID: 17904}
+    - Class: 114
+      Script: {instanceID: 18046}
+    - Class: 114
+      Script: {instanceID: 18048}
+    - Class: 114
+      Script: {instanceID: 18120}
+    - Class: 114
+      Script: {instanceID: 18198}
+    - Class: 114
+      Script: {instanceID: 18396}
+    - Class: 114
+      Script: {instanceID: 18520}
+    - Class: 114
+      Script: {instanceID: 18522}
+    - Class: 114
+      Script: {instanceID: 18574}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/SampleScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -164,6 +288,67 @@ ScriptsOnlyBuild:
     - Class: 128
       Script: {instanceID: 0}
     - Class: 136
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/TitleScene 1.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 15412}
+    - Class: 114
+      Script: {instanceID: 15706}
+    - Class: 114
+      Script: {instanceID: 15760}
+    - Class: 114
+      Script: {instanceID: 16410}
+    - Class: 114
+      Script: {instanceID: 16428}
+    - Class: 114
+      Script: {instanceID: 17140}
+    - Class: 114
+      Script: {instanceID: 17572}
+    - Class: 114
+      Script: {instanceID: 17904}
+    - Class: 114
+      Script: {instanceID: 18198}
+    - Class: 114
+      Script: {instanceID: 18520}
+    - Class: 114
+      Script: {instanceID: 86650}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -917,9 +1102,17 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: e0f1cb5beb0b39dfa525dc95a7851182
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoveBG2
   platform: 5
   scenePathNames:
   - Assets/Scenes/TitleScene.unity
+  - Assets/Scenes/TitleScene 1.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.5.0/2d
+  - Assets/Scenes/SampleScene 1.unity
+  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.6.1/2d
     movement prototype.exe

@@ -20,7 +20,7 @@ public class MoveBG2 : MonoBehaviour
 
         if (transform.position.x > 0 && spawned == false)
         {
-            Instantiate(bg, new Vector2(-43, 0), transform.rotation);
+            Instantiate(bg, new Vector3(-43, 0, 20), transform.rotation);
             spawned = true;
         }
 
