@@ -824,7 +824,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1216,7 +1216,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: v1.6.0
+  m_Text: 'v1.6.3
+
+'
 --- !u!222 &1446203250
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1464,6 +1466,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 811768290}
+    - target: {fileID: 8692216283548587530, guid: d6a24cef2ba558b46816f1c741310e0a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Title
+      objectReference: {fileID: 0}
     - target: {fileID: 8692216283548587531, guid: d6a24cef2ba558b46816f1c741310e0a,
         type: 3}
       propertyPath: m_Pivot.x

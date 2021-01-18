@@ -665,7 +665,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1111,7 +1111,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: v1.6.0
+  m_Text: 'v1.6.3
+
+'
 --- !u!222 &1446203250
 CanvasRenderer:
   m_ObjectHideFlags: 0
