@@ -30,10 +30,15 @@ public class Scene : MonoBehaviour
     //play sound
     public void playSound()
     {
+     
+        Destroy(GameObject.Find("menuhit(Clone)"));
+       
         Instantiate(audioClip);
+        DontDestroyOnLoad(audioClip);
     }
 
     //load first level
+    /*
     public void StartGame()
     {
         if(audioClip.isPlaying != true)
@@ -81,5 +86,48 @@ public class Scene : MonoBehaviour
         {
             Application.Quit();
         }
+    }
+    */
+    public void StartGame()
+    {
+       
+            SceneManager.LoadScene("SampleScene");
+        
+    }
+    public void StartGame1()
+    {
+       
+            SceneManager.LoadScene("SampleScene 1");
+        
+    }
+
+    //load current scene
+    public void RestartGame()
+    {
+    
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
+    }
+
+    //load title scene
+    public void Title()
+    {
+     
+            SceneManager.LoadScene("TitleScene");
+        
+    }
+    public void LevelSelect()
+    {
+       
+            SceneManager.LoadScene("TitleScene 1");
+        
+    }
+
+    //quit program
+    public void QuitGame()
+    {
+     
+            Application.Quit();
+        
     }
 }

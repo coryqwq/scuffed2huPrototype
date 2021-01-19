@@ -561,9 +561,9 @@ GameObject:
   - component: {fileID: 811768289}
   - component: {fileID: 811768288}
   - component: {fileID: 811768287}
-  - component: {fileID: 811768290}
   - component: {fileID: 811768291}
   - component: {fileID: 811768292}
+  - component: {fileID: 811768290}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -648,7 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 169538bab69218344a3a3b5c5ee8e1b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 1108671370}
+  canvas: {fileID: 1446203246}
   audioClip: {fileID: 3111299934110749874, guid: 1591bc9e379c26b4fb6f0d72fd1c359e,
     type: 3}
 --- !u!82 &811768291
