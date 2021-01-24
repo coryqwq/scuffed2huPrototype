@@ -77,6 +77,7 @@
     <Compile Include="Assets\DetectCollisionPlayer.cs" />
     <Compile Include="Assets\DetectCollisionProjectile.cs" />
     <Compile Include="Assets\DetectCollisionProjectilePlayer.cs" />
+    <Compile Include="Assets\End.cs" />
     <Compile Include="Assets\EnemyFire.cs" />
     <Compile Include="Assets\EnemyFire2.cs" />
     <Compile Include="Assets\EnemyFireBoss.cs" />

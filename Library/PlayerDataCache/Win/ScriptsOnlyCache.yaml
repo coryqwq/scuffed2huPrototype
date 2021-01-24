@@ -13,6 +13,7 @@ ScriptsOnlyBuild:
     - DetectCollisionPlayer
     - DetectCollisionProjectile
     - DetectCollisionProjectilePlayer
+    - End
     - EnemyFire
     - EnemyFire2
     - EnemyFireBoss
@@ -182,6 +183,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 189124}
     - Class: 114
       Script: {instanceID: 216256}
+    - Class: 114
+      Script: {instanceID: 274334}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1140,13 +1143,13 @@ ScriptsOnlyBuild:
     className: MoveBG2
   - hash:
       serializedVersion: 2
-      Hash: 304725395e441bb2350007854b02de68
+      Hash: e6efbbfacb350cdfeabd3f23ee279600
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyFireBoss
   - hash:
       serializedVersion: 2
-      Hash: 39c3d17d35f52f0f253409903748a8b9
+      Hash: 83eef28b8b160a893d4f64ba9f7ab8c5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DetectCollisionEnemyBoss
@@ -1186,11 +1189,17 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyMovement1
+  - hash:
+      serializedVersion: 2
+      Hash: 9d7ef384c7cdc682f0cdb2482f330a8f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: End
   platform: 5
   scenePathNames:
   - Assets/Scenes/TitleScene.unity
   - Assets/Scenes/TitleScene 1.unity
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/SampleScene 1.unity
-  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.7.0/2d
+  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.7.1/2d
     movement prototype.exe

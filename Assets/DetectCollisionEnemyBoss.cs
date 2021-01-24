@@ -8,6 +8,8 @@ public class DetectCollisionEnemyBoss : MonoBehaviour
     public float HP = 8;
     public GameObject spawnAmmoInBulk;
     public GameObject projectilePrefab;
+    public GameObject passMsg;
+    public GameObject passSound;
 
     // Start is called before the first frame update
     void Start()

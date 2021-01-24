@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDelay1: 0.5
-  spawnInterval1: 0.3
+  spawnInterval1: 0.2
   startDelay2: 0
   spawnInterval2: 3
   startDelay3: 0.7
@@ -153,13 +153,14 @@ MonoBehaviour:
     type: 3}
   projectilePrefab1: {fileID: 8192333897723499336, guid: a2f11c27ad308fb4e88f79594f508874,
     type: 3}
-  turnSpeed: 30
+  turnSpeed: 60
   angleDistance: 0
   angleOffset: 90
-  angleBound: 180
+  angleBound: 360
   timer: 0
   phase1: 1
   phase2: 1
+  phase3: 1
 --- !u!114 &7463803166890097150
 MonoBehaviour:
   m_ObjectHideFlags: 0

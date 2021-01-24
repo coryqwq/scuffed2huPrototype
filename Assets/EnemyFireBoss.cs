@@ -22,6 +22,7 @@ public class EnemyFireBoss : MonoBehaviour
     public float timer = 0;
     public bool phase1 = true;
     public bool phase2 = true;
+    public bool phase3 = true;
 
 
     // Start is called before the first frame update
@@ -40,14 +41,23 @@ public class EnemyFireBoss : MonoBehaviour
             phase1 = false;
         }
 
-        if (timer > 18 &&  phase2 == true)
+        if (timer > 18 && phase2 == true)
         {
             InvokeRepeating("FireGun2", startDelay2, spawnInterval2);
             InvokeRepeating("FireGun2", startDelay3, spawnInterval3);
             InvokeRepeating("FireGun2", startDelay4, spawnInterval4);
             phase2 = false;
         }
+
+        if (timer > 32 && phase3 == true)
+        {
+            InvokeRepeating("FireGun3", startDelay2, spawnInterval2);
+            InvokeRepeating("FireGun3", startDelay3, spawnInterval3);
+            InvokeRepeating("FireGun3", startDelay4, spawnInterval4);
+            phase3 = false;
+        }
     }
+
     void FireGun1()
     {
         //calculate angles
@@ -70,9 +80,7 @@ public class EnemyFireBoss : MonoBehaviour
 
         //create projectiles
         Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(0 + angleOffset, Vector3.forward));
-
         Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(40 + angleOffset, Vector3.forward));
-
         Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(-40 + angleOffset, Vector3.forward));
 
     }
@@ -85,6 +93,19 @@ public class EnemyFireBoss : MonoBehaviour
         {
             projectilePrefab.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             Instantiate(projectilePrefab1, transform.position + new Vector3 (0, 0, -1), projectilePrefab.transform.rotation);
+
+            angle += 40;
+        }
+    }
+
+    void FireGun3()
+    {
+        int angle = 0;
+
+        for (int i = 0; i < 9; i++)
+        {
+            projectilePrefab.transform.rotation = Quaternion.AngleAxis(angle + 22.5f, Vector3.forward);
+            Instantiate(projectilePrefab1, transform.position + new Vector3(0, 0, -1), projectilePrefab.transform.rotation);
 
             angle += 40;
         }

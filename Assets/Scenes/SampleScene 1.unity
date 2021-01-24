@@ -3288,7 +3288,7 @@ PrefabInstance:
     - target: {fileID: 2523904609596583447, guid: 32b02fab84f11a443a62fddc159a09bf,
         type: 3}
       propertyPath: spawnIntervalAmmo
-      value: 2
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 2523904609596583447, guid: 32b02fab84f11a443a62fddc159a09bf,
         type: 3}
@@ -3730,7 +3730,7 @@ PrefabInstance:
     - target: {fileID: 7463803166890097150, guid: 53f3381763febda4faa61c4f2d6dfeea,
         type: 3}
       propertyPath: HP
-      value: 500
+      value: 750
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53f3381763febda4faa61c4f2d6dfeea, type: 3}
