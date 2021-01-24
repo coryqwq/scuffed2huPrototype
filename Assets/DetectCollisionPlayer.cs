@@ -22,7 +22,7 @@ public class DetectCollisionPlayer : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
         //check if on collision with gameobject tagged "Player"
-        if (collision.CompareTag("Projectile"))
+        if (collision.CompareTag("EnemyProjectile"))
         {
             HP -= 1;
             Destroy(healthBar[indexHP].gameObject);

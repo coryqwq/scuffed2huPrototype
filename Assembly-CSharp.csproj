@@ -64,22 +64,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ConstantAngle.cs" />
+    <Compile Include="Assets\AmmoFollowPlayer.cs" />
+    <Compile Include="Assets\BossMovement.cs" />
+    <Compile Include="Assets\BossSpawnAmmo.cs" />
     <Compile Include="Assets\DestroyEnemyOutOfBounds.cs" />
     <Compile Include="Assets\DestroyOutOfBounds.cs" />
     <Compile Include="Assets\DetectCollisionAmmo.cs" />
     <Compile Include="Assets\DetectCollisionEnemy.cs" />
     <Compile Include="Assets\DetectCollisionEnemy2.cs" />
+    <Compile Include="Assets\DetectCollisionEnemyBoss.cs" />
     <Compile Include="Assets\DetectCollisionGun.cs" />
     <Compile Include="Assets\DetectCollisionPlayer.cs" />
     <Compile Include="Assets\DetectCollisionProjectile.cs" />
+    <Compile Include="Assets\DetectCollisionProjectilePlayer.cs" />
     <Compile Include="Assets\EnemyFire.cs" />
     <Compile Include="Assets\EnemyFire2.cs" />
+    <Compile Include="Assets\EnemyFireBoss.cs" />
     <Compile Include="Assets\EnemyMovement.cs" />
+    <Compile Include="Assets\EnemyMovement1.cs" />
     <Compile Include="Assets\EnemyMovement2.cs" />
     <Compile Include="Assets\EnemyRotateToPlayer.cs" />
     <Compile Include="Assets\FollowMouse.cs" />
     <Compile Include="Assets\FollowPlayer.cs" />
+    <Compile Include="Assets\GunAngle.cs" />
     <Compile Include="Assets\GunFollowPlayer.cs" />
     <Compile Include="Assets\GunManager.cs" />
     <Compile Include="Assets\InvisibleMouse.cs" />
@@ -97,6 +104,7 @@
     <Compile Include="Assets\ScoreCounter.cs" />
     <Compile Include="Assets\SetRenderCamera.cs" />
     <Compile Include="Assets\SpawnManager.cs" />
+    <Compile Include="Assets\Toss.cs" />
     <Compile Include="Assets\eMoveForward.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

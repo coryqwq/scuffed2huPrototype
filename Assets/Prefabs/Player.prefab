@@ -14,13 +14,12 @@ GameObject:
   - component: {fileID: 2956076341910471242}
   - component: {fileID: 2956076341910471236}
   - component: {fileID: 2956076341910471237}
-  - component: {fileID: 2956076341910471241}
   - component: {fileID: 2956076341910471243}
-  - component: {fileID: 2956076341910471240}
   - component: {fileID: 2956076341910471247}
   - component: {fileID: -4651568134621110890}
   - component: {fileID: 1677204095}
   - component: {fileID: 1684481899267904488}
+  - component: {fileID: 69950089}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -37,7 +36,7 @@ Transform:
   m_GameObject: {fileID: 2956076341910471234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -106,8 +105,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xInput: 0
   yInput: 0
-  speedRun: 22
-  speedWalk: 10
+  speedRun: 15
+  speedWalk: 8
   projectilePrefab: {fileID: 8740282109521927093, guid: 2531ac3216541704a90a56323f376da5,
     type: 3}
   ammoCount: 120
@@ -158,18 +157,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerControllerScript: {fileID: 0}
---- !u!114 &2956076341910471241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2956076341910471234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c34c9d59c402ec4195f9f4847e31525, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2956076341910471243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,20 +190,6 @@ MonoBehaviour:
   - {fileID: 0}
   indexHP: 0
   indexMaxHP: 11
---- !u!114 &2956076341910471240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2956076341910471234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f515bcad1b5c434a993a8df9345542e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  time: 0
 --- !u!82 &2956076341910471247
 AudioSource:
   m_ObjectHideFlags: 0
@@ -224,10 +197,10 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2956076341910471234}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 978c6c534d1356742ad7d266136f41f0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 010b8dcb6bb54e14995d96b1be0dadc4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.787
   m_Pitch: 1
@@ -361,3 +334,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   num: -1
+--- !u!114 &69950089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2956076341910471234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c8236ddb0256da4ba6bbc0f689c35fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -27,7 +27,7 @@ public class DetectCollisionEnemy : MonoBehaviour
             //if enemy health equals 0, destroy enemy gameobject
             if (HP == 0)
             {
-                temp = Instantiate(ammoPack1, transform.position + new Vector3(0, 0, 1) , ammoPack1.transform.rotation);
+                temp = Instantiate(ammoPack1, transform.position, ammoPack1.transform.rotation);
                 spawnManagerScript.StartCoroutine(spawnManagerScript.CountDown(temp));
                 ScoreCounter scoreCounterScript = GameObject.Find("Main Camera").GetComponent<ScoreCounter>(); 
                 scoreCounterScript.scoreNumber += 10;

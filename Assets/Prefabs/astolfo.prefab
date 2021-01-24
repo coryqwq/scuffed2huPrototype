@@ -166,9 +166,9 @@ MonoBehaviour:
   speed: 2.5
   xDistance: 5
   totalDistance: 0
-  xPos: -8
-  yPos: 0
-  a: 0.18
+  xPos: -10
+  yPos: 5
+  a: 0.1
 --- !u!114 &3430291028866738591
 MonoBehaviour:
   m_ObjectHideFlags: 0

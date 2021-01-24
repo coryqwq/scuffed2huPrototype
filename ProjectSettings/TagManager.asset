@@ -13,6 +13,7 @@ TagManager:
   - Gun2
   - CurrentGun
   - Bounds
+  - EnemyProjectile
   layers:
   - Default
   - TransparentFX

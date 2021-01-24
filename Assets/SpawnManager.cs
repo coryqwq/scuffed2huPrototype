@@ -29,38 +29,46 @@ public class SpawnManager : MonoBehaviour
     public GameObject parentObject1;
     public GameObject parentObject2;
 
+    public bool enableAmmoSpawn = true;
+    public bool enableEnemySpawn = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        //call function for spawning ammo at intervals
-        InvokeRepeating("SpawnAmmo", startDelayAmmo, spawnIntervalAmmo);
-        
-        //call function for spawning enemy at intervals
-        InvokeRepeating("SpawnEnemy1", startDelayEnem1, spawnIntervalEnem1);
+        if(enableAmmoSpawn == true)
+        {
+            //call function for spawning ammo at intervals
+            InvokeRepeating("SpawnAmmo", startDelayAmmo, spawnIntervalAmmo);
 
-        //call function for spawning enemy at intervals
-        InvokeRepeating("SpawnEnemy2", startDelayEnem2, spawnIntervalEnem2);
+        }
 
-   
-
+        if (enableEnemySpawn == true)
+        {
+            //call function for spawning enemy at intervals
+            InvokeRepeating("SpawnEnemy1", startDelayEnem1, spawnIntervalEnem1);
+            //call function for spawning enemy at intervals
+            InvokeRepeating("SpawnEnemy2", startDelayEnem2, spawnIntervalEnem2);
+        }
     }
 
-    private void Update()
+    public void Update()
     {
-        timer += Time.deltaTime;
-
-        if (timer > 10 && invoked1 == false)
+        if(enableEnemySpawn == true)
         {
-            InvokeRepeating("SpawnEnemy1Variant", startDelayEnem1v, spawnIntervalEnem1v);
-            invoked1 = true;
-        }
+            timer += Time.deltaTime;
 
-        if (timer > 30 && invoked2 == false)
-        {
-            InvokeRepeating("SpawnEnemy2", startDelayEnem2v, spawnIntervalEnem2v);
-            invoked2 = true;
-        }
+            if (timer > 10 && invoked1 == false)
+            {
+                InvokeRepeating("SpawnEnemy1Variant", startDelayEnem1v, spawnIntervalEnem1v);
+                invoked1 = true;
+            }
+
+            if (timer > 30 && invoked2 == false)
+            {
+                InvokeRepeating("SpawnEnemy2", startDelayEnem2v, spawnIntervalEnem2v);
+                invoked2 = true;
+            }
+        }    
     }
     void SpawnAmmo()
     {
@@ -68,7 +76,7 @@ public class SpawnManager : MonoBehaviour
         {
             //declaring and initializing variables with randomized values within defined range
             int ammoIndex = Random.Range(0, ammoPrefabs.Length);
-            Vector3 spawnPos = new Vector3(Random.Range(-spawnX + 15.8f, spawnX), Random.Range(-spawnY, spawnY), 1);
+            Vector3 spawnPos = new Vector3(Random.Range(-spawnX + 15.8f, spawnX), Random.Range(-spawnY, spawnY), 0);
        
             //create ammo at random x,y location within defined range and start count down till despawn
             ammoTemp[ammoIndex] =  Instantiate(ammoPrefabs[ammoIndex], spawnPos, ammoPrefabs[ammoIndex].transform.rotation);
@@ -90,7 +98,7 @@ public class SpawnManager : MonoBehaviour
         if (GameObject.Find("PlayerImage") != null)
         {
             //create enemy as a child of the parent point of reference gameobject 
-            GameObject childObject = Instantiate(enemyPrefab[0], new Vector2(-4, 30), enemyPrefab[0].transform.rotation);
+            GameObject childObject = Instantiate(enemyPrefab[2], new Vector2(-4, 30), enemyPrefab[0].transform.rotation);
             childObject.transform.parent = parentObject2.transform;
         }
     }
