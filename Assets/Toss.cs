@@ -5,12 +5,15 @@ using UnityEngine;
 public class Toss : MonoBehaviour
 {
     public Rigidbody targetRb;
+    public Transform enemyProjectile;
     // Start is called before the first frame update
     void Start()
     {
         targetRb = GetComponent<Rigidbody>();
         targetRb.AddForce(Vector3.up * Random.Range(5.0f, 8.0f), ForceMode.Impulse);
         targetRb.AddForce(Vector3.right * Random.Range(-10.0f, 10.0f), ForceMode.Impulse);
+
+
 
     }
 

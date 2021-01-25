@@ -22,7 +22,7 @@ public class AmmoFollowPlayer : MonoBehaviour
             timer += Time.deltaTime;
             if (timer > 3)
             {
-                position = (GameObject.Find("Player").transform.position);
+                position = (GameObject.Find("Player").transform.position + new Vector3(0, 0, 1));
                 transform.position = Vector3.MoveTowards(transform.position, position, speed * Time.deltaTime);
             }
         }

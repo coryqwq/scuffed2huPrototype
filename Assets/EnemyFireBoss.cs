@@ -92,7 +92,7 @@ public class EnemyFireBoss : MonoBehaviour
         for (int i = 0; i < 9; i++)
         {
             projectilePrefab.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-            Instantiate(projectilePrefab1, transform.position + new Vector3 (0, 0, -1), projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab1, transform.position, projectilePrefab.transform.rotation);
 
             angle += 40;
         }
@@ -105,7 +105,7 @@ public class EnemyFireBoss : MonoBehaviour
         for (int i = 0; i < 9; i++)
         {
             projectilePrefab.transform.rotation = Quaternion.AngleAxis(angle + 22.5f, Vector3.forward);
-            Instantiate(projectilePrefab1, transform.position + new Vector3(0, 0, -1), projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab1, transform.position, projectilePrefab.transform.rotation);
 
             angle += 40;
         }

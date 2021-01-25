@@ -983,7 +983,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &601345357
 MonoBehaviour:
@@ -1215,6 +1215,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1 &862916152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 862916154}
+  - component: {fileID: 862916153}
+  m_Layer: 0
+  m_Name: End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &862916153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862916152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41aed04b8dc3644aa92f5ca363e37a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  passMsg: {fileID: 5726316810844650817, guid: c97da903e7323c747847e1f63ebc8c95, type: 3}
+  passSound: {fileID: 488272855530069754, guid: 3548b8f72bb4d48438f389abce9feccf,
+    type: 3}
+  invoked: 0
+--- !u!4 &862916154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862916152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.505707, y: -0.7185462, z: -20.423607}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &866654023
 GameObject:
   m_ObjectHideFlags: 0
@@ -3327,7 +3374,7 @@ PrefabInstance:
     - target: {fileID: 6469770815644640299, guid: 3789d74be45df5147a325684d4e6c19f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6469770815644640299, guid: 3789d74be45df5147a325684d4e6c19f,
         type: 3}
@@ -3727,10 +3774,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: astolfo
       objectReference: {fileID: 0}
+    - target: {fileID: 7463803166890097144, guid: 53f3381763febda4faa61c4f2d6dfeea,
+        type: 3}
+      propertyPath: phase2
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7463803166890097150, guid: 53f3381763febda4faa61c4f2d6dfeea,
         type: 3}
       propertyPath: HP
       value: 750
       objectReference: {fileID: 0}
+    - target: {fileID: 7463803166890097150, guid: 53f3381763febda4faa61c4f2d6dfeea,
+        type: 3}
+      propertyPath: passMsg
+      value: 
+      objectReference: {fileID: 5726316810844650817, guid: c97da903e7323c747847e1f63ebc8c95,
+        type: 3}
+    - target: {fileID: 7463803166890097150, guid: 53f3381763febda4faa61c4f2d6dfeea,
+        type: 3}
+      propertyPath: passSound
+      value: 
+      objectReference: {fileID: 488272855530069754, guid: 3548b8f72bb4d48438f389abce9feccf,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53f3381763febda4faa61c4f2d6dfeea, type: 3}

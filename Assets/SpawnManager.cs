@@ -76,7 +76,7 @@ public class SpawnManager : MonoBehaviour
         {
             //declaring and initializing variables with randomized values within defined range
             int ammoIndex = Random.Range(0, ammoPrefabs.Length);
-            Vector3 spawnPos = new Vector3(Random.Range(-spawnX + 15.8f, spawnX), Random.Range(-spawnY, spawnY), 0);
+            Vector3 spawnPos = new Vector3(Random.Range(-spawnX + 15.8f, spawnX), Random.Range(-spawnY, spawnY), 1);
        
             //create ammo at random x,y location within defined range and start count down till despawn
             ammoTemp[ammoIndex] =  Instantiate(ammoPrefabs[ammoIndex], spawnPos, ammoPrefabs[ammoIndex].transform.rotation);

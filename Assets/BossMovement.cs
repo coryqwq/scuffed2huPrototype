@@ -21,21 +21,26 @@ public class BossMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (transform.position.y >= 0 && phase1 == true)
+        //run body if y position of gameobject is greater than or equal to  0 and phase1 equals true
+        if (transform.localPosition.y >= 0 && phase1 == true)
         {
+            //move gameobject down by decrementing current y position 
             yPos -= 1 * Time.deltaTime * speed;
             transform.localPosition = new Vector2(xPos, yPos);
-            
-            if(transform.localPosition.y <= 0)
+
+            //ruyn body if y position of gameobject is less  than or equal to  0 
+            if (transform.localPosition.y <= 0)
             {
+                //set phase1 to false and phase2 to true
                 phase1 = false;
                 phase2 = true;
             }
         }
         
+        //run body if phase2 is true
         if(phase2 == true)
         {
+            //increment an x value for calculating and setting x,y coordintes of gameobect to elliptical path
             xPos += Time.deltaTime;
             transform.localPosition = new Vector2(0f + (4f * Mathf.Sin(xPos)),
                                                  -1f + (1f * Mathf.Cos(xPos)));

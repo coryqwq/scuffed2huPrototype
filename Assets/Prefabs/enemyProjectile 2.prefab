@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8635893772717905837}
   - component: {fileID: 5828438795189697369}
   - component: {fileID: 8374047450565351361}
+  - component: {fileID: 606037360919125233}
   m_Layer: 0
   m_Name: enemyProjectile 2
   m_TagString: EnemyProjectile
@@ -27,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8192333897723499336}
-  m_LocalRotation: {x: 0, y: 0, z: 0.104528494, w: -0.9945219}
-  m_LocalPosition: {x: 0, y: 1, z: 1.5}
+  m_LocalRotation: {x: 0, y: -0, z: 0.10452855, w: -0.9945219}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 348}
 --- !u!212 &3522285930616451103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dc6a952a884b2b045b6e34d5f61bf615, type: 3}
-  m_Color: {r: 1, g: 0.9386792, b: 0.9386792, a: 1}
+  m_Color: {r: 1, g: 0.9292453, b: 0.9292453, a: 1}
   m_FlipX: 0
   m_FlipY: 1
   m_DrawMode: 0
@@ -120,8 +121,21 @@ CapsuleCollider:
   m_GameObject: {fileID: 8192333897723499336}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.35
   m_Height: 0.7
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 5}
+  m_Center: {x: 0, y: 0, z: 4}
+--- !u!65 &606037360919125233
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8192333897723499336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 4}
