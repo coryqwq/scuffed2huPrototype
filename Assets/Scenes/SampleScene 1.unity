@@ -1247,6 +1247,7 @@ MonoBehaviour:
   passMsg: {fileID: 5726316810844650817, guid: c97da903e7323c747847e1f63ebc8c95, type: 3}
   passSound: {fileID: 488272855530069754, guid: 3548b8f72bb4d48438f389abce9feccf,
     type: 3}
+  enemy: {fileID: 7463803165713694260}
   invoked: 0
 --- !u!4 &862916154
 Transform:
@@ -3792,9 +3793,21 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 7463803166890097150, guid: 53f3381763febda4faa61c4f2d6dfeea,
         type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 9083477492655191362, guid: 587ca7d8f5deee042a7aeee1075fb954,
+        type: 3}
+    - target: {fileID: 7463803166890097150, guid: 53f3381763febda4faa61c4f2d6dfeea,
+        type: 3}
       propertyPath: passSound
       value: 
       objectReference: {fileID: 488272855530069754, guid: 3548b8f72bb4d48438f389abce9feccf,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53f3381763febda4faa61c4f2d6dfeea, type: 3}
+--- !u!1 &7463803165713694260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5192112620474259501, guid: 53f3381763febda4faa61c4f2d6dfeea,
+    type: 3}
+  m_PrefabInstance: {fileID: 7463803165713694259}
+  m_PrefabAsset: {fileID: 0}

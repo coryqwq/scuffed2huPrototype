@@ -5,7 +5,7 @@ using UnityEngine;
 public class Toss : MonoBehaviour
 {
     public Rigidbody targetRb;
-    public Transform enemyProjectile;
+
     // Start is called before the first frame update
     void Start()
     {

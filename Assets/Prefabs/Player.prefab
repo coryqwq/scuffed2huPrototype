@@ -36,7 +36,7 @@ Transform:
   m_GameObject: {fileID: 2956076341910471234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1, y: 1.1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 35fbae968d6d1b249b54e0d707870c11, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b1e9a6cf69242fe44801cd9d5fdcda83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -197,10 +197,10 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2956076341910471234}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 010b8dcb6bb54e14995d96b1be0dadc4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 20725459d93a7f4409e69db7ad03584d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.787
   m_Pitch: 1
@@ -310,7 +310,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.25
+  m_Radius: 0.15
   m_Height: 0
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 4}

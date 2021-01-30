@@ -6,6 +6,7 @@ public class End : MonoBehaviour
 {
     public GameObject passMsg;
     public GameObject passSound;
+    public GameObject enemy;
 
     public bool invoked = false;
 
@@ -18,7 +19,7 @@ public class End : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.Find("astolfo") == null && invoked == false)
+        if(enemy == null && invoked == false)
         {
             StartCoroutine(LevelPassed());
             invoked = true;
