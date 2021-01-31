@@ -49,6 +49,10 @@ public class Scene : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene 2");
     }
+    public void StartGame3()
+    {
+        SceneManager.LoadScene("SampleScene 3");
+    }
 
     //load current scene
     public void RestartGame()

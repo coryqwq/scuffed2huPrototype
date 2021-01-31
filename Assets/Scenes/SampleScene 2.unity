@@ -558,7 +558,7 @@ PrefabInstance:
     - target: {fileID: 2356826303822134759, guid: 093a34826b3b54c4bbaa5a31166def79,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2356826303822134759, guid: 093a34826b3b54c4bbaa5a31166def79,
         type: 3}
@@ -2835,10 +2835,6 @@ MonoBehaviour:
   - {fileID: 3622826454365613022, guid: a64b84f1ec79f2344805ae7083d403b3, type: 3}
   projectilePrefab1: {fileID: 8192333897723499336, guid: 55def4b3e789f1142adfb18ad54afe4c,
     type: 3}
-  turnSpeed: 30
-  angleDistance: 0
-  angleOffset: 0
-  angleBound: 0
   timer: 0
   phase1: 1
   phase2: 1

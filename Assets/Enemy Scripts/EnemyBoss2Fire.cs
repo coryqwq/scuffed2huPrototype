@@ -73,7 +73,7 @@ public class EnemyBoss2Fire : MonoBehaviour
             //set angle of projectile
             projectilePrefab1.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             //create projectiles
-            Instantiate(projectilePrefab1, transform.position + new Vector3(0, 0, -1), projectilePrefab1.transform.rotation);
+            Instantiate(projectilePrefab1, transform.position, projectilePrefab1.transform.rotation);
 
             angle += 45;
         }
@@ -88,7 +88,7 @@ public class EnemyBoss2Fire : MonoBehaviour
             //set angle of projectile
             projectilePrefab1.transform.rotation = Quaternion.AngleAxis(angle + 22.5f, Vector3.forward);
             //create projectiles
-            Instantiate(projectilePrefab1, transform.position + new Vector3(0, 0, -1), projectilePrefab1.transform.rotation);
+            Instantiate(projectilePrefab1, transform.position, projectilePrefab1.transform.rotation);
 
             angle += 45;
         }
