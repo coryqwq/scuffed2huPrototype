@@ -11,7 +11,7 @@ public class TossProjectile : MonoBehaviour
     void Start()
     {
         targetRb = GetComponent<Rigidbody>();
-        targetRb.AddForce(Vector3.up * 8, ForceMode.Impulse);
+        targetRb.AddForce(Vector3.up * 10, ForceMode.Impulse);
         targetRb.AddForce(Vector3.right * force, ForceMode.Impulse);
 
     }

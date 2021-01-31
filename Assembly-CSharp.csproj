@@ -87,6 +87,7 @@
     <Compile Include="Assets\Environment Scripts\MoveBackgroundSides.cs" />
     <Compile Include="Assets\Environment Scripts\Scene.cs" />
     <Compile Include="Assets\Environment Scripts\ScoreCounter.cs" />
+    <Compile Include="Assets\Environment Scripts\SetRenderCamera.cs" />
     <Compile Include="Assets\Environment Scripts\SpawnManager.cs" />
     <Compile Include="Assets\Item Scripts\AmmoFollowPlayer.cs" />
     <Compile Include="Assets\Item Scripts\DelayedMoveProjectileForward.cs" />
