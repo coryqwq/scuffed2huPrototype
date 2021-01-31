@@ -1149,7 +1149,7 @@ ScriptsOnlyBuild:
     className: PlayerProjectileAngle
   - hash:
       serializedVersion: 2
-      Hash: f3ddfab48516f212acb94e721bcfa63c
+      Hash: 23cc57fb5b54bb38373da33a2e5b1174
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DetectCollisionEnemyBoss

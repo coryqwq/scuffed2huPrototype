@@ -12,10 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd1b16638c2d5d042a260a6d617aaa99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnSpeed: 360
   speed: 2.5
-  xDistance: 0
-  totalDistance: 0
   xPos: 10
   yPos: 5
   a: 0.1
@@ -93,6 +90,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3430291028866738588, guid: 6ecedefbdf928ee4db523489ec61e791, type: 3}
+    - {fileID: 3430291028866738578, guid: 6ecedefbdf928ee4db523489ec61e791, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6ecedefbdf928ee4db523489ec61e791, type: 3}
 --- !u!1 &5011306398268449628 stripped
 GameObject:

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8635893772717905837}
   - component: {fileID: 5828438795189697369}
   - component: {fileID: 8374047450565351361}
-  - component: {fileID: 606037360919125233}
   m_Layer: 0
   m_Name: enemyProjectile 2
   m_TagString: EnemyProjectile
@@ -121,21 +120,8 @@ CapsuleCollider:
   m_GameObject: {fileID: 8192333897723499336}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.35
+  m_Enabled: 1
+  m_Radius: 0.4
   m_Height: 0.7
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 4}
---- !u!65 &606037360919125233
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8192333897723499336}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5, z: 0.2}
   m_Center: {x: 0, y: 0, z: 4}

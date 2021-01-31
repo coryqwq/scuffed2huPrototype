@@ -98,5 +98,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemyProjectile 2 Variant 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8374047450565351361, guid: a2f11c27ad308fb4e88f79594f508874,
+        type: 3}
+      propertyPath: m_Height
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8374047450565351361, guid: a2f11c27ad308fb4e88f79594f508874,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 8374047450565351361, guid: a2f11c27ad308fb4e88f79594f508874,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 606037360919125233, guid: a2f11c27ad308fb4e88f79594f508874, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a2f11c27ad308fb4e88f79594f508874, type: 3}

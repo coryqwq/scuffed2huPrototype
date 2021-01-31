@@ -10,11 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3150253516433629776}
   - component: {fileID: 3150253516433629783}
-  - component: {fileID: 3150253516433629777}
-  - component: {fileID: 3150253516433629779}
   - component: {fileID: 3150253516433629778}
   - component: {fileID: 3150253516433629788}
-  - component: {fileID: 3150253516433629789}
   - component: {fileID: -5040014099697245879}
   - component: {fileID: 39477862}
   - component: {fileID: 8149160821465490923}
@@ -91,40 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3150253516433629777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3150253516433629782}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 090ceeaea18934d45b4686165b7e5166, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startDelay: 0.7
-  spawnInterval: 0.5
-  projectilePrefab: {fileID: 8740282109521927093, guid: 9b7153817e64f0a498db2f13f3c23e65,
-    type: 3}
-  turnSpeed: 30
-  angleDistance: 0
-  angleOffset: 180
-  i: 0
-  angle: 0
---- !u!65 &3150253516433629779
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3150253516433629782}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1.28, y: 1.25, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 2}
 --- !u!54 &3150253516433629778
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -153,25 +116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c34c9d59c402ec4195f9f4847e31525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3150253516433629789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3150253516433629782}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f4edb14824d67f4987d8ce67771a56f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turnSpeed: 360
-  speed: 2.5
-  xDistance: 5
-  totalDistance: 0
-  xPos: -10
-  yPos: 0
-  a: 0
 --- !u!114 &-5040014099697245879
 MonoBehaviour:
   m_ObjectHideFlags: 0

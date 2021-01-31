@@ -107,12 +107,12 @@ MonoBehaviour:
   yInput: 0
   speedRun: 15
   speedWalk: 8
-  projectilePrefab: {fileID: 8740282109521927093, guid: 2531ac3216541704a90a56323f376da5,
-    type: 3}
   ammoCount: 120
   ammoCount2: 120
   ammo1: {fileID: 0}
   ammo2: {fileID: 0}
+  projectilePrefab: {fileID: 8740282109521927093, guid: 2531ac3216541704a90a56323f376da5,
+    type: 3}
   xRange: 24
   yRange: 13.5
 --- !u!65 &2956076341910471242
@@ -156,6 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e750af4f79880404ebe43946f1dbac88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammoDrop: 30
   playerControllerScript: {fileID: 0}
 --- !u!114 &2956076341910471243
 MonoBehaviour:
@@ -311,8 +312,8 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.15
-  m_Height: 0
-  m_Direction: 1
+  m_Height: 8
+  m_Direction: 2
   m_Center: {x: 0, y: 0, z: 4}
 --- !u!114 &1684481899267904488
 MonoBehaviour:
