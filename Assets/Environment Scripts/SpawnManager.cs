@@ -93,7 +93,7 @@ public class SpawnManager : MonoBehaviour
         if(GameObject.Find("PlayerImage") != null)
         {
             //create enemy as a child of the parent point of reference gameobject 
-            GameObject childObject = Instantiate(enemyPrefab[0], new Vector2(-4, 30), enemyPrefab[0].transform.rotation);
+            GameObject childObject = Instantiate(enemyPrefab[0], new Vector3(-4, 30, 0), enemyPrefab[0].transform.rotation);
             childObject.transform.parent = parentObject1.transform;
         }   
     }
@@ -102,7 +102,7 @@ public class SpawnManager : MonoBehaviour
         if (GameObject.Find("PlayerImage") != null)
         {
             //create enemy as a child of the parent point of reference gameobject 
-            GameObject childObject = Instantiate(enemyPrefab[2], new Vector2(-4, 30), enemyPrefab[0].transform.rotation);
+            GameObject childObject = Instantiate(enemyPrefab[2], new Vector3(-4, 30, 0), enemyPrefab[0].transform.rotation);
             childObject.transform.parent = parentObject2.transform;
         }
     }
@@ -111,7 +111,7 @@ public class SpawnManager : MonoBehaviour
         if (GameObject.Find("PlayerImage") != null)
         {
             //create enemy
-            Instantiate(enemyPrefab[1], new Vector2(-12, 10), enemyPrefab[1].transform.rotation);
+            Instantiate(enemyPrefab[1], new Vector3(-12, 10, 0), enemyPrefab[1].transform.rotation);
         }
     }
 
@@ -120,7 +120,7 @@ public class SpawnManager : MonoBehaviour
         if (GameObject.Find("PlayerImage") != null)
         {
             //create enemy
-            Instantiate(enemyPrefab[1], new Vector2(-12, 0), enemyPrefab[1].transform.rotation);
+            Instantiate(enemyPrefab[1], new Vector3(-12, 0, 0), enemyPrefab[1].transform.rotation);
         }
     }
 

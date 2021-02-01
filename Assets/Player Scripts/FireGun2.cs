@@ -5,7 +5,12 @@ using UnityEngine;
 public class FireGun2 : MonoBehaviour
 {
     public float startDelay = 0.0f;
-    public float spawnInterval = 0.05f;
+    public float spawnInterval = 1f;
+    public float startDelay1 = 0.2f;
+    public float spawnInterval1 = 1f;
+    public float bulletSpread = 10.0f;
+    public int bulletDamage = 8;
+    
     public GameObject projectilePrefab;
     public PlayerController playerControllerScript;
 
@@ -14,6 +19,8 @@ public class FireGun2 : MonoBehaviour
     {
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
         InvokeRepeating("FireGun", startDelay, spawnInterval);
+        InvokeRepeating("FireGun", startDelay1, spawnInterval1);
+
     }
 
     // Update is called once per frame
@@ -23,8 +30,14 @@ public class FireGun2 : MonoBehaviour
         if (Input.GetMouseButton(0) && playerControllerScript.ammoCount2 != 0)
         {
             //create projectile
-            Instantiate(projectilePrefab, GameObject.Find("Player").transform.position + new Vector3(0,0,2), projectilePrefab.transform.rotation);
-            playerControllerScript.ammoCount2 -= 1;
+            Instantiate(projectilePrefab, transform.position + new Vector3(0,0,2),
+                       transform.rotation * Quaternion.AngleAxis(0, Vector3.forward));
+            Instantiate(projectilePrefab, transform.position + new Vector3(0, 0, 2),
+                       transform.rotation * Quaternion.AngleAxis(bulletSpread, Vector3.forward));
+            Instantiate(projectilePrefab, transform.position + new Vector3(0, 0, 2),
+                       transform.rotation * Quaternion.AngleAxis(-bulletSpread, Vector3.forward));
+
+            playerControllerScript.ammoCount2 -= 3;
         }
     }
 }

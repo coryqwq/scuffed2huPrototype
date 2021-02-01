@@ -133,6 +133,7 @@ MonoBehaviour:
     type: 3}
   temp: {fileID: 0}
   spawnManagerScript: {fileID: 0}
+  gun2: {fileID: 2145065474123803967, guid: 1a8a35e6de4bd9b44b7363565a72f0a0, type: 3}
 --- !u!136 &39477862
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -141,12 +142,12 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3150253516433629782}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 1
   m_Height: 2.5
   m_Direction: 0
-  m_Center: {x: 0, y: 0, z: 2}
+  m_Center: {x: 0, y: 0, z: 4}
 --- !u!114 &8149160821465490923
 MonoBehaviour:
   m_ObjectHideFlags: 0

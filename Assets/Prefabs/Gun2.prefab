@@ -95,8 +95,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe6058a0cc3ed48448e0800f11431a0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDelay: 0
-  spawnInterval: 0.05
+  startDelay: 0.1
+  spawnInterval: 1
+  startDelay1: 0.3
+  spawnInterval1: 1
+  bulletSpread: 10
+  bulletDamage: 8
   projectilePrefab: {fileID: 3616463822494905802, guid: 267a8f9d94a9a0140b1bfbae930e3bab,
     type: 3}
   playerControllerScript: {fileID: 0}

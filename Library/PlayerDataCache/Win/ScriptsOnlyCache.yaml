@@ -39,7 +39,6 @@ ScriptsOnlyBuild:
     - MovePlayerProjectileForward
     - PlayerAngle
     - PlayerController
-    - PlayerProjectileAngle
     - Scene
     - ScoreCounter
     - SetRenderCamera
@@ -68,6 +67,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene 1.unity:
@@ -144,6 +144,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13306}
     - Class: 114
+      Script: {instanceID: 13320}
+    - Class: 114
       Script: {instanceID: 13338}
     - Class: 114
       Script: {instanceID: 13444}
@@ -155,8 +157,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13554}
     - Class: 114
       Script: {instanceID: 13736}
-    - Class: 114
-      Script: {instanceID: 13768}
     - Class: 114
       Script: {instanceID: 13774}
     - Class: 114
@@ -285,6 +285,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13306}
     - Class: 114
+      Script: {instanceID: 13320}
+    - Class: 114
       Script: {instanceID: 13338}
     - Class: 114
       Script: {instanceID: 13444}
@@ -296,8 +298,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13606}
     - Class: 114
       Script: {instanceID: 13736}
-    - Class: 114
-      Script: {instanceID: 13768}
     - Class: 114
       Script: {instanceID: 13774}
     - Class: 114
@@ -322,6 +322,133 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14318}
     - Class: 114
       Script: {instanceID: 14324}
+    - Class: 114
+      Script: {instanceID: 14444}
+    - Class: 114
+      Script: {instanceID: 14446}
+    - Class: 114
+      Script: {instanceID: 14498}
+    - Class: 114
+      Script: {instanceID: 62192}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/SampleScene 3.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11244}
+    - Class: 114
+      Script: {instanceID: 11246}
+    - Class: 114
+      Script: {instanceID: 11272}
+    - Class: 114
+      Script: {instanceID: 11374}
+    - Class: 114
+      Script: {instanceID: 11538}
+    - Class: 114
+      Script: {instanceID: 11624}
+    - Class: 114
+      Script: {instanceID: 11818}
+    - Class: 114
+      Script: {instanceID: 11898}
+    - Class: 114
+      Script: {instanceID: 12122}
+    - Class: 114
+      Script: {instanceID: 12140}
+    - Class: 114
+      Script: {instanceID: 12290}
+    - Class: 114
+      Script: {instanceID: 12308}
+    - Class: 114
+      Script: {instanceID: 12412}
+    - Class: 114
+      Script: {instanceID: 12502}
+    - Class: 114
+      Script: {instanceID: 12562}
+    - Class: 114
+      Script: {instanceID: 12614}
+    - Class: 114
+      Script: {instanceID: 12622}
+    - Class: 114
+      Script: {instanceID: 12640}
+    - Class: 114
+      Script: {instanceID: 12660}
+    - Class: 114
+      Script: {instanceID: 12740}
+    - Class: 114
+      Script: {instanceID: 12896}
+    - Class: 114
+      Script: {instanceID: 13234}
+    - Class: 114
+      Script: {instanceID: 13306}
+    - Class: 114
+      Script: {instanceID: 13338}
+    - Class: 114
+      Script: {instanceID: 13444}
+    - Class: 114
+      Script: {instanceID: 13470}
+    - Class: 114
+      Script: {instanceID: 13490}
+    - Class: 114
+      Script: {instanceID: 13736}
+    - Class: 114
+      Script: {instanceID: 13784}
+    - Class: 114
+      Script: {instanceID: 13814}
+    - Class: 114
+      Script: {instanceID: 13956}
+    - Class: 114
+      Script: {instanceID: 13958}
+    - Class: 114
+      Script: {instanceID: 14030}
+    - Class: 114
+      Script: {instanceID: 14036}
+    - Class: 114
+      Script: {instanceID: 14116}
+    - Class: 114
+      Script: {instanceID: 14132}
+    - Class: 114
+      Script: {instanceID: 14318}
     - Class: 114
       Script: {instanceID: 14444}
     - Class: 114
@@ -431,8 +558,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13490}
     - Class: 114
       Script: {instanceID: 13736}
-    - Class: 114
-      Script: {instanceID: 13768}
     - Class: 114
       Script: {instanceID: 13784}
     - Class: 114
@@ -650,7 +775,7 @@ ScriptsOnlyBuild:
     className: TurnProjectileToPlayer
   - hash:
       serializedVersion: 2
-      Hash: a07c1a935dbe3cfd32066bd37d7e8d1d
+      Hash: b7b3bad61bfec2d5c02420f74f4c1913
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FireGun2
@@ -1040,7 +1165,7 @@ ScriptsOnlyBuild:
     className: SpriteSkin
   - hash:
       serializedVersion: 2
-      Hash: 5319d2f437a4655d5b2d16497f68c604
+      Hash: 4f7cd51ad6a34877e2d39ef2940f4a46
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DamageEnemy2
@@ -1154,7 +1279,7 @@ ScriptsOnlyBuild:
     className: PlayerProjectileAngle
   - hash:
       serializedVersion: 2
-      Hash: 23cc57fb5b54bb38373da33a2e5b1174
+      Hash: f207c5a87599094f7674bfef5649ecdf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DamageEnemyBoss
@@ -1369,5 +1494,6 @@ ScriptsOnlyBuild:
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/SampleScene 1.unity
   - Assets/Scenes/SampleScene 2.unity
-  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.8.3/2d
+  - Assets/Scenes/SampleScene 3.unity
+  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.9.0/2d
     movement prototype.exe

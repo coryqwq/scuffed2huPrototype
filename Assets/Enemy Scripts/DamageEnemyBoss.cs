@@ -1,37 +1,47 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DamageEnemyBoss : MonoBehaviour
 {
     //declaring and initializing variable
-    public int HP = 750;
+    public float HP = 750;
     public int points = 69000;
     public GameObject spawnAmmoInBulk;
     public GameObject projectilePrefab;
-    public GameObject healthBar;
-    float healthBarOffset = 0;
-    private GameObject[] temp = new GameObject[750];
+    public GameObject gun2;
+
+    public RectTransform healthBar;
 
     // Start is called before the first frame update
     void Start()
     {
-        for(int index = 0; index < HP; index++)
-        {
-            healthBarOffset += 0.041f;
-            temp[index] = Instantiate(healthBar, healthBar.transform.position + new Vector3(healthBarOffset, 0, 0), healthBar.transform.rotation);
-        }
+
     }
     private void OnTriggerEnter(Collider collision)
     {
         //check if on collision with gameobject tagged "Projectile"
         if (collision.CompareTag("Projectile2") || collision.CompareTag("Projectile"))
         {
-            HP -= 1;
-            GameObject.Destroy(temp[HP]);
+            if (collision.CompareTag("Projectile"))
+            {
+                HP -= 1;
+                healthBar.sizeDelta = new Vector2((HP * 1.6f), healthBar.sizeDelta.y);
+            }
+
+            if (collision.CompareTag("Projectile2"))
+            {
+                FireGun2 fireGun2Script = gun2.GetComponent<FireGun2>();
+                for(int count = 0; count < fireGun2Script.bulletDamage; count++)
+                {
+                    HP -= 1;
+                    healthBar.sizeDelta = new Vector2((HP * 1.6f), healthBar.sizeDelta.y);
+                }
+            }
 
             //if enemy health equals 0, destroy enemy gameobject
-            if (HP == 0)
+            if (HP <= 0)
             {
                 SelfDestruct();
                 Instantiate(spawnAmmoInBulk, transform.position, transform.rotation);
