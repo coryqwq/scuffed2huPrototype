@@ -40,8 +40,10 @@ ScriptsOnlyBuild:
     - MovePlayerProjectileForward
     - PlayerAngle
     - PlayerController
+    - PreviousScene
     - Scene
     - ScoreCounter
+    - ScoreResults
     - SetRenderCamera
     - SpawnManager
     - TossAmmo
@@ -190,6 +192,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 62192}
     - Class: 114
       Script: {instanceID: 120286}
+    - Class: 114
+      Script: {instanceID: 190700}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -335,6 +339,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 62192}
     - Class: 114
       Script: {instanceID: 120286}
+    - Class: 114
+      Script: {instanceID: 190700}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -464,6 +470,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 62192}
     - Class: 114
       Script: {instanceID: 120286}
+    - Class: 114
+      Script: {instanceID: 190700}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -527,6 +535,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11898}
     - Class: 114
       Script: {instanceID: 11946}
+    - Class: 114
+      Script: {instanceID: 12122}
     - Class: 114
       Script: {instanceID: 12140}
     - Class: 114
@@ -593,6 +603,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 62192}
     - Class: 114
       Script: {instanceID: 120286}
+    - Class: 114
+      Script: {instanceID: 190700}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -656,6 +668,73 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14116}
     - Class: 114
       Script: {instanceID: 14444}
+    - Class: 114
+      Script: {instanceID: 190700}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/TitleScene 2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11244}
+    - Class: 114
+      Script: {instanceID: 11246}
+    - Class: 114
+      Script: {instanceID: 11272}
+    - Class: 114
+      Script: {instanceID: 11624}
+    - Class: 114
+      Script: {instanceID: 12290}
+    - Class: 114
+      Script: {instanceID: 12308}
+    - Class: 114
+      Script: {instanceID: 13470}
+    - Class: 114
+      Script: {instanceID: 13490}
+    - Class: 114
+      Script: {instanceID: 13814}
+    - Class: 114
+      Script: {instanceID: 14116}
+    - Class: 114
+      Script: {instanceID: 14444}
+    - Class: 114
+      Script: {instanceID: 62192}
+    - Class: 114
+      Script: {instanceID: 195310}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -715,6 +794,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14116}
     - Class: 114
       Script: {instanceID: 14444}
+    - Class: 114
+      Script: {instanceID: 190700}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -982,7 +1063,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 6d7dc699a7e3bb4a7311484e688b89ca
+      Hash: 8a50fbe3734c063647a9a372948ee887
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameState
@@ -1096,7 +1177,7 @@ ScriptsOnlyBuild:
     className: MovePlayerProjectileForward
   - hash:
       serializedVersion: 2
-      Hash: b8de6195c68d12771e1317bb4cecc3c8
+      Hash: 86d009b61ad083d0af1127dd8436ff68
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FireGun1
@@ -1246,7 +1327,7 @@ ScriptsOnlyBuild:
     className: Scene
   - hash:
       serializedVersion: 2
-      Hash: 3c3105f97b8099b2f3232b77a22f060c
+      Hash: 72c28f06a804dae6346f062ec24b520e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScoreCounter
@@ -1502,6 +1583,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BombExpansion
+  - hash:
+      serializedVersion: 2
+      Hash: f545815eaeae23db219bff16f34bab63
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PreviousScene
+  - hash:
+      serializedVersion: 2
+      Hash: 9e8d7d4a48abd19639f984366bc5853e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreResults
   platform: 5
   scenePathNames:
   - Assets/Scenes/TitleScene.unity
@@ -1510,5 +1603,6 @@ ScriptsOnlyBuild:
   - Assets/Scenes/SampleScene 1.unity
   - Assets/Scenes/SampleScene 2.unity
   - Assets/Scenes/SampleScene 3.unity
-  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.10.1/2d
+  - Assets/Scenes/TitleScene 2.unity
+  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.11.0/2d
     movement prototype.exe

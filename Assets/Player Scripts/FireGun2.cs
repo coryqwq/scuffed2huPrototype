@@ -29,6 +29,9 @@ public class FireGun2 : MonoBehaviour
         // check for user input of left mouse button
         if (Input.GetMouseButton(0) && playerControllerScript.ammoCount2 != 0)
         {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+
             //create projectile
             Instantiate(projectilePrefab, transform.position + new Vector3(0,0,2),
                        transform.rotation * Quaternion.AngleAxis(0, Vector3.forward));

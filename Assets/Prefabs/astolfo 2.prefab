@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c19410a3dccf9a4fa2ee2edb49002bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 5
+  HP: 3
   ammoPack2: {fileID: 7083487330982451646, guid: 2779fe599af591e4eb59bc5694df5e6e,
     type: 3}
   temp: {fileID: 0}

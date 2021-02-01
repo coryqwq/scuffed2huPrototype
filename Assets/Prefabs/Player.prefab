@@ -106,7 +106,7 @@ MonoBehaviour:
   xInput: 0
   yInput: 0
   speedRun: 15
-  speedWalk: 8
+  speedWalk: 9
   ammoCount: 120
   ammoCount2: 120
   ammo1: {fileID: 0}

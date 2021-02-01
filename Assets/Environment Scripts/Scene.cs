@@ -35,6 +35,7 @@ public class Scene : MonoBehaviour
 
         Instantiate(audioClip);
         DontDestroyOnLoad(audioClip);
+        DontDestroyOnLoad(GameObject.Find("PreviousScene"));
     }
     public void StartGame()
     {

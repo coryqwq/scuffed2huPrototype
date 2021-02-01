@@ -8,6 +8,7 @@ public class FireGun1 : MonoBehaviour
     public float spawnInterval = 0.05f;
     public GameObject projectilePrefab;
     public GameObject player;
+    public GameObject rifleSfx;
     public PlayerController playerControllerScript;
 
     // Start is called before the first frame update
@@ -26,6 +27,9 @@ public class FireGun1 : MonoBehaviour
         // check for user input of left mouse button
         if (Input.GetMouseButton(0) && playerControllerScript.ammoCount != 0)
         {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+
             //create projectile
             Instantiate(projectilePrefab, transform.position + new Vector3(0, 0, 2), transform.rotation);
             //decrement ammo by 1
