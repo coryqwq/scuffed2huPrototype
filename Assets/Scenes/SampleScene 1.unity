@@ -3572,36 +3572,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5067567347743120948, guid: da75c11fedeee0344b19ba280c9faf3a,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5067567347743120948, guid: da75c11fedeee0344b19ba280c9faf3a,
-        type: 3}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5067567347743120948, guid: da75c11fedeee0344b19ba280c9faf3a,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 0b3235779de82664fb594e3cfce57633,
-        type: 3}
     - target: {fileID: 5067567347743120949, guid: da75c11fedeee0344b19ba280c9faf3a,
         type: 3}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5067567347743120949, guid: da75c11fedeee0344b19ba280c9faf3a,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5067567347743120949, guid: da75c11fedeee0344b19ba280c9faf3a,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5067567347743120949, guid: da75c11fedeee0344b19ba280c9faf3a,
         type: 3}
@@ -3901,44 +3875,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: astolfo
       objectReference: {fileID: 0}
-    - target: {fileID: 7463803166890097144, guid: 53f3381763febda4faa61c4f2d6dfeea,
-        type: 3}
-      propertyPath: phase2
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7463803166890097150, guid: 53f3381763febda4faa61c4f2d6dfeea,
-        type: 3}
-      propertyPath: HP
-      value: 750
-      objectReference: {fileID: 0}
-    - target: {fileID: 7463803166890097150, guid: 53f3381763febda4faa61c4f2d6dfeea,
-        type: 3}
-      propertyPath: gun2
-      value: 
-      objectReference: {fileID: 2145065474123803967, guid: 1a8a35e6de4bd9b44b7363565a72f0a0,
-        type: 3}
-    - target: {fileID: 7463803166890097150, guid: 53f3381763febda4faa61c4f2d6dfeea,
-        type: 3}
-      propertyPath: points
-      value: 6969
-      objectReference: {fileID: 0}
-    - target: {fileID: 7463803166890097150, guid: 53f3381763febda4faa61c4f2d6dfeea,
-        type: 3}
-      propertyPath: passMsg
-      value: 
-      objectReference: {fileID: 5726316810844650817, guid: c97da903e7323c747847e1f63ebc8c95,
-        type: 3}
     - target: {fileID: 7463803166890097150, guid: 53f3381763febda4faa61c4f2d6dfeea,
         type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 30308743}
-    - target: {fileID: 7463803166890097150, guid: 53f3381763febda4faa61c4f2d6dfeea,
-        type: 3}
-      propertyPath: passSound
-      value: 
-      objectReference: {fileID: 488272855530069754, guid: 3548b8f72bb4d48438f389abce9feccf,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53f3381763febda4faa61c4f2d6dfeea, type: 3}
 --- !u!1 &7463803165713694260 stripped

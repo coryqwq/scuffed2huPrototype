@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 5192112620474259501}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.4490495, y: 8.602919, z: 0}
-  m_LocalScale: {x: 5, y: 4.5, z: 1}
+  m_LocalScale: {x: 4, y: 3.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -173,11 +173,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60cae1ce52adac419cc8eacb902b157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 10
+  HP: 750
+  points: 6969
   spawnAmmoInBulk: {fileID: 4306249661621040965, guid: d94b3ab51daf16e45a8e83cc4ab8dbbf,
     type: 3}
   projectilePrefab: {fileID: 7824073734145001908, guid: dfc0776b5c7fb7a43aa6d6628f905ca5,
     type: 3}
+  gun2: {fileID: 2145065474123803967, guid: 1a8a35e6de4bd9b44b7363565a72f0a0, type: 3}
+  healthBar: {fileID: 0}
 --- !u!114 &446151557
 MonoBehaviour:
   m_ObjectHideFlags: 0

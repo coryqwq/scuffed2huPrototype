@@ -1510,5 +1510,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/SampleScene 1.unity
   - Assets/Scenes/SampleScene 2.unity
   - Assets/Scenes/SampleScene 3.unity
-  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.10.0/2d
+  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.10.1/2d
     movement prototype.exe
