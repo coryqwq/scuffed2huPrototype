@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AmmoFollowPlayer
+    - BombExpansion
     - BossMovement1
     - BossMovement2
     - BossSpawnAmmo
@@ -187,6 +188,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14498}
     - Class: 114
       Script: {instanceID: 62192}
+    - Class: 114
+      Script: {instanceID: 120286}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -330,6 +333,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14498}
     - Class: 114
       Script: {instanceID: 62192}
+    - Class: 114
+      Script: {instanceID: 120286}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -457,6 +462,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14498}
     - Class: 114
       Script: {instanceID: 62192}
+    - Class: 114
+      Script: {instanceID: 120286}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -584,6 +591,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14498}
     - Class: 114
       Script: {instanceID: 62192}
+    - Class: 114
+      Script: {instanceID: 120286}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -817,7 +826,7 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: 730aad0fdfb15d9cdab2ee312182a844
+      Hash: abdb87b1cdb40da49144eef45c426d3f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyBoss2Fire
@@ -1285,7 +1294,7 @@ ScriptsOnlyBuild:
     className: DamageEnemyBoss
   - hash:
       serializedVersion: 2
-      Hash: afb41110f7635b0e2fa097755b645ff0
+      Hash: 7519f2a9b4e0b358ec043787725bdb24
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DamagePlayer
@@ -1487,6 +1496,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SetRenderCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 42baaa84ba24cfc7d6305f26b0b796b8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BombExpansion
   platform: 5
   scenePathNames:
   - Assets/Scenes/TitleScene.unity
@@ -1495,5 +1510,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/SampleScene 1.unity
   - Assets/Scenes/SampleScene 2.unity
   - Assets/Scenes/SampleScene 3.unity
-  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.9.0/2d
+  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.10.0/2d
     movement prototype.exe

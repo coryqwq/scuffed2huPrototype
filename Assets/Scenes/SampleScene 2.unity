@@ -2850,6 +2850,7 @@ MonoBehaviour:
   timer: 0
   phase1: 1
   phase2: 1
+  timePhase2: 20
   phase3: 1
 --- !u!1 &1560602570
 GameObject:

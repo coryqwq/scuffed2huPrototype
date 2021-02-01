@@ -18,6 +18,7 @@ public class EnemyBoss2Fire : MonoBehaviour
     public float timer = 0;
     public bool phase1 = true;
     public bool phase2 = true;
+    public float timePhase2 = 5;
     public bool phase3 = true;
 
 
@@ -37,7 +38,7 @@ public class EnemyBoss2Fire : MonoBehaviour
             phase1 = false;
         }
 
-        if (timer > 20 && phase2 == true)
+        if (timer > timePhase2 && phase2 == true)
         {
             InvokeRepeating("FireGun2", startDelay2, spawnInterval2);
             InvokeRepeating("FireGun2", startDelay3, spawnInterval3);

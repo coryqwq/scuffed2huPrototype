@@ -9,6 +9,7 @@ public class DamagePlayer : MonoBehaviour
     public GameObject deathMsg;
     public GameObject playerImage;
     public GameObject deathBGM;
+    public GameObject bomb;
     public Image[] healthBar;
     public int indexHP = 0;
     public int indexMaxHP = 11;
@@ -20,15 +21,17 @@ public class DamagePlayer : MonoBehaviour
         {
             HP -= 1;
             Destroy(healthBar[indexHP].gameObject);
-
+            Instantiate(bomb, transform.position, transform.rotation);
+            
             //if index of health bar does not equal indexMaxHP, increment index (prevents overaccessing array)
             if(indexHP != indexMaxHP)
             {
                 indexHP += 1;
             }
+            
 
             //if player health equals 0, destroy player gameobject and create death message gameobject
-            if (HP == 0)
+            if (HP <= 0)
             {
                 Destroy(playerImage.gameObject);
                 Destroy(GameObject.Find("Gun1(Clone)"));

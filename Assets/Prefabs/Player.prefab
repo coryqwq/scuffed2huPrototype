@@ -176,6 +176,7 @@ MonoBehaviour:
   playerImage: {fileID: 0}
   deathBGM: {fileID: 6315039885049710715, guid: 76fb8db4c91a2b9409c23530d017f3e1,
     type: 3}
+  bomb: {fileID: 523308410399526137, guid: ac2866d63623e41468111d8dd720ce7e, type: 3}
   healthBar:
   - {fileID: 0}
   - {fileID: 0}

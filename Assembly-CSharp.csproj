@@ -90,6 +90,7 @@
     <Compile Include="Assets\Environment Scripts\SetRenderCamera.cs" />
     <Compile Include="Assets\Environment Scripts\SpawnManager.cs" />
     <Compile Include="Assets\Item Scripts\AmmoFollowPlayer.cs" />
+    <Compile Include="Assets\Item Scripts\BombExpansion.cs" />
     <Compile Include="Assets\Item Scripts\DelayedMoveProjectileForward.cs" />
     <Compile Include="Assets\Item Scripts\DestroyOutOfBounds.cs" />
     <Compile Include="Assets\Item Scripts\FollowMouse.cs" />
