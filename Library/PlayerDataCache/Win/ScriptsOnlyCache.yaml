@@ -865,7 +865,7 @@ ScriptsOnlyBuild:
     className: TurnProjectileToPlayer
   - hash:
       serializedVersion: 2
-      Hash: b7b3bad61bfec2d5c02420f74f4c1913
+      Hash: d037a69f33bbe61bb454e9443a53d44d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FireGun2
@@ -1273,7 +1273,7 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: a5c6020a8bf7ba77d6b580c73250db66
+      Hash: 4d077c7b25fd6259de8aae907ae15d23
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GunManager

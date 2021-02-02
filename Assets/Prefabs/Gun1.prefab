@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 819d4ea6a647a134c8d4f4643dab8beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDelay: 0.1
+  startDelay: 0.05
   spawnInterval: 0.085
   projectilePrefab: {fileID: 8740282109521927093, guid: 2531ac3216541704a90a56323f376da5,
     type: 3}

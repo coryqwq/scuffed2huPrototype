@@ -9,6 +9,8 @@ public class GunManager : MonoBehaviour
     public GameObject[] temp;
     public int num = -1;
 
+    public float timer = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,8 @@ public class GunManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timer += Time.deltaTime;
+
         //assign value key the return value of method GetPressedNumber() 
         key = GetPressedNumber();
         //check if value of key does not equal -1, if true, call method SwitchGun() and pass the value of key

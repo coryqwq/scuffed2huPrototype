@@ -58,7 +58,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!114 &4815546237130110825
 MonoBehaviour:
@@ -106,6 +106,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4815546237130110827}
     m_Modifications:
+    - target: {fileID: 5029299282641687585, guid: dbc987c120069ac4da509b869f59e29a,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 5029299282641687614, guid: dbc987c120069ac4da509b869f59e29a,
         type: 3}
       propertyPath: m_Name
@@ -119,7 +124,7 @@ PrefabInstance:
     - target: {fileID: 5029299282641687615, guid: dbc987c120069ac4da509b869f59e29a,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0.50000113
       objectReference: {fileID: 0}
     - target: {fileID: 5029299282641687615, guid: dbc987c120069ac4da509b869f59e29a,
         type: 3}
@@ -194,12 +199,12 @@ PrefabInstance:
     - target: {fileID: 5029299282641687615, guid: dbc987c120069ac4da509b869f59e29a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 864
+      value: 913.5
       objectReference: {fileID: 0}
     - target: {fileID: 5029299282641687615, guid: dbc987c120069ac4da509b869f59e29a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 495
+      value: 530.3
       objectReference: {fileID: 0}
     - target: {fileID: 5029299282641687615, guid: dbc987c120069ac4da509b869f59e29a,
         type: 3}

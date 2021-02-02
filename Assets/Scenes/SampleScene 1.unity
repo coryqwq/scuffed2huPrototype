@@ -1016,7 +1016,7 @@ PrefabInstance:
     - target: {fileID: 4815546237130110827, guid: c02638bceed390640a142e3a3bfc8690,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4815546237130110827, guid: c02638bceed390640a142e3a3bfc8690,
         type: 3}
@@ -1276,7 +1276,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &778007868
 MonoBehaviour:
@@ -1336,7 +1336,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &800850183
 GameObject:
@@ -1934,7 +1934,7 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1177680034
 MonoBehaviour:
@@ -2079,7 +2079,7 @@ Transform:
   - {fileID: 108873175}
   - {fileID: 435379660}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1288658136 stripped
 GameObject:
@@ -2116,7 +2116,7 @@ Transform:
   m_Children:
   - {fileID: 446151559}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1358580661
 GameObject:
@@ -2616,7 +2616,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1727574019
 PrefabInstance:
@@ -2628,7 +2628,7 @@ PrefabInstance:
     - target: {fileID: 2843456436425485652, guid: 5f4d482d784c6a44085cbf917587201c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2843456436425485652, guid: 5f4d482d784c6a44085cbf917587201c,
         type: 3}
