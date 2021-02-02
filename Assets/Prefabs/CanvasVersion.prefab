@@ -109,7 +109,7 @@ PrefabInstance:
     - target: {fileID: 5029299282641687585, guid: dbc987c120069ac4da509b869f59e29a,
         type: 3}
       propertyPath: m_Text
-      value: 'v1.11.2
+      value: 'v1.11.3
 
 
 '

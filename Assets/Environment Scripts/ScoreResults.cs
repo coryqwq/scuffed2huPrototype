@@ -12,6 +12,9 @@ public class ScoreResults : MonoBehaviour
     public int scoreNumber;
     public int scoreCount = 0;
     public int count = 10;
+    public bool invoked1 = false;
+    public bool invoked2 = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,64 +44,44 @@ public class ScoreResults : MonoBehaviour
             scoreNumber = previousSceneScript.score;
         }
     }
-        // Update is called once per frame
+    // Update is called once per frame
     void Update()
     {
-        PreviousScene previousSceneScript = GameObject.Find("PreviousScene").GetComponent<PreviousScene>();
 
-        if (previousSceneScript.previousScene == "SampleScene")
+        if (invoked1 == false)
         {
-            if (highScoreCount < highScoreNumber)
+            highScoreCount += count;
+            highScore.text = "HI-SCORE:" + highScoreCount;
+
+            if (highScoreCount > highScoreNumber - 60)
             {
-                highScoreCount += count;
-                highScore.text = "HI-SCORE:" + highScoreCount;
+                invoked1 = true;
             }
-            
-            if(scoreCount < scoreNumber)
-            {
-                scoreCount += count;
-                score.text = "SCORE:" + scoreCount;
-            }
+
         }
 
-        if (previousSceneScript.previousScene == "SampleScene 1")
+        if (invoked1 == true)
         {
-            if (highScoreCount < highScoreNumber)
-            {
-                highScoreCount += count;
-                highScore.text = "HI-SCORE:" + highScoreCount;
-            }
-
-            if (scoreCount < scoreNumber)
-            {
-                scoreCount += count;
-                score.text = "SCORE:" + scoreCount;
-            }
-        }
-
-        if (previousSceneScript.previousScene == "SampleScene 2")
-        {
-            if (highScoreCount < highScoreNumber)
-            {
-                highScoreCount += count;
-                highScore.text = "HI-SCORE:" + highScoreCount;
-            }
-
-            if (scoreCount < scoreNumber)
-            {
-                scoreCount += count;
-                score.text = "SCORE:" + scoreCount;
-            }
-        }
-
-        if (previousSceneScript.previousScene == "SampleScene 3")
-        {
-            if (highScoreCount < highScoreNumber)
+            if(highScoreCount < highScoreNumber)
             {
                 highScoreCount += 1;
                 highScore.text = "HI-SCORE:" + highScoreCount;
             }
+        }
 
+        if (invoked2 == false)
+        {
+            scoreCount += count;
+            score.text = "SCORE:" + scoreCount;
+
+            if (scoreCount > scoreNumber - 60)
+            {
+                invoked2 = true;
+            }
+        }
+
+        if (invoked2 == true)
+        {
             if (scoreCount < scoreNumber)
             {
                 scoreCount += 1;

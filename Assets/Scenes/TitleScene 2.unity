@@ -631,7 +631,7 @@ MonoBehaviour:
   highScoreCount: 0
   scoreNumber: 0
   scoreCount: 0
-  count: 10
+  count: 12
 --- !u!1 &813062665
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,7 +689,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 52b367bfea2d8d64b90493880d82df42, type: 3}
-  m_Color: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
+  m_Color: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

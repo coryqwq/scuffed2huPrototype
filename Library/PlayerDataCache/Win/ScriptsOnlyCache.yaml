@@ -1591,7 +1591,7 @@ ScriptsOnlyBuild:
     className: PreviousScene
   - hash:
       serializedVersion: 2
-      Hash: 9e8d7d4a48abd19639f984366bc5853e
+      Hash: bcc5d351fd822d7b0be92bbc17f7fa29
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScoreResults
@@ -1604,5 +1604,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/SampleScene 2.unity
   - Assets/Scenes/SampleScene 3.unity
   - Assets/Scenes/TitleScene 2.unity
-  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.11.2/2d
+  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.11.3/2d
     movement prototype.exe
