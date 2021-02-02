@@ -3671,7 +3671,7 @@ PrefabInstance:
     - target: {fileID: 2523904609596583447, guid: 32b02fab84f11a443a62fddc159a09bf,
         type: 3}
       propertyPath: enableAmmoSpawn
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2523904609596583447, guid: 32b02fab84f11a443a62fddc159a09bf,
         type: 3}
@@ -3681,7 +3681,7 @@ PrefabInstance:
     - target: {fileID: 2523904609596583447, guid: 32b02fab84f11a443a62fddc159a09bf,
         type: 3}
       propertyPath: spawnIntervalAmmo
-      value: 1.8
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2523904609596583447, guid: 32b02fab84f11a443a62fddc159a09bf,
         type: 3}

@@ -865,7 +865,7 @@ ScriptsOnlyBuild:
     className: TurnProjectileToPlayer
   - hash:
       serializedVersion: 2
-      Hash: d037a69f33bbe61bb454e9443a53d44d
+      Hash: 2d378dc6aeba5cb8b0b1cc4d1a4df898
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FireGun2
@@ -1604,5 +1604,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/SampleScene 2.unity
   - Assets/Scenes/SampleScene 3.unity
   - Assets/Scenes/TitleScene 2.unity
-  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.11.1/2d
+  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.11.2/2d
     movement prototype.exe
