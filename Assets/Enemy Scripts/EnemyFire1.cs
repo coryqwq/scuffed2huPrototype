@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyFire1 : MonoBehaviour
 {
-    public float startDelay = 0.5f;
-    public float spawnInterval = 0.7f;
+    public float startDelay = 0.01f;
+    public float spawnInterval = 0.8f;
     public GameObject projectilePrefab;
     public float turnSpeed = 30.0f;
     public float angleDistance = 0.0f;
@@ -19,9 +19,10 @@ public class EnemyFire1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("FireGun", startDelay, spawnInterval);
+        GameState gameStateScript = GameObject.FindWithTag("GameState").GetComponent<GameState>();
+        InvokeRepeating("FireGun", startDelay, spawnInterval * gameStateScript.spawnIntervalOffset);
     }
- 
+
     void FireGun()
     {
         //calculate angles
@@ -43,10 +44,21 @@ public class EnemyFire1 : MonoBehaviour
             angleOffset += turnSpeed;
         }
         */
-        
+   
+        for (int i = 0; i < 8; i++)
+        {
+            //set angle of projectile
+            projectilePrefab.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            //create projectiles
+            Instantiate(projectilePrefab, transform.position + new Vector3(0, 0, 1), projectilePrefab.transform.rotation);
+
+            angle += 45;
+        }
+        /*
         //create projectiles
         Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(0 + angleOffset, Vector3.forward));
         Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(40 + angleOffset, Vector3.forward));
         Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(-40 + angleOffset, Vector3.forward));
+        */
     }
 }

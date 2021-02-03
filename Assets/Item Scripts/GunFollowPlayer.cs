@@ -9,8 +9,8 @@ public class GunFollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = GameObject.Find("Player").transform.position + offset;
-        transform.rotation = GameObject.Find("Player").transform.rotation;
+        transform.position = GameObject.FindWithTag("Player").transform.position + offset;
+        transform.rotation = GameObject.FindWithTag("Player").transform.rotation;
 
         Vector3 mousePos = Input.mousePosition;
         Vector3 objPos = Camera.main.WorldToScreenPoint(transform.position);
@@ -22,7 +22,7 @@ public class GunFollowPlayer : MonoBehaviour
 
         if(angle != 0)
         {
-            transform.RotateAround(GameObject.Find("PlayerImage").transform.position, Vector3.forward, angle - 90);
+            transform.RotateAround(GameObject.FindWithTag("PlayerImage").transform.position, Vector3.forward, angle - 90);
         }
     }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5936289668614925841}
   m_Layer: 0
   m_Name: GameState
-  m_TagString: Untagged
+  m_TagString: GameState
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,5 +46,17 @@ MonoBehaviour:
   passMsg: {fileID: 5726316810844650817, guid: c97da903e7323c747847e1f63ebc8c95, type: 3}
   passSound: {fileID: 488272855530069754, guid: 3548b8f72bb4d48438f389abce9feccf,
     type: 3}
-  enemy: {fileID: 0}
+  fps: {fileID: 8397182495064860492, guid: aba1165a41873c74c8511e7f2146e5be, type: 3}
+  endLevel: 0
   invoked: 0
+  scoreboardTransition: 0
+  spawnIntervalOffset: 0
+  projectileSpeedOffset: 0
+  easyInterval: 2
+  easySpeed: -3
+  mediumInterval: 1
+  mediumSpeed: 0
+  hardInterval: 0.6
+  hardSpeed: 3
+  hardestInterval: 0.3
+  hardestSpeed: 6

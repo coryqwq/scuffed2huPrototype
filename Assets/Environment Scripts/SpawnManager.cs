@@ -76,7 +76,7 @@ public class SpawnManager : MonoBehaviour
     }
     void SpawnAmmo()
     {
-        if (GameObject.Find("PlayerImage") != null)
+        if (GameObject.FindWithTag("PlayerImage") != null)
         {
             //declaring and initializing variables with randomized values within defined range
             int ammoIndex = Random.Range(0, ammoPrefabs.Length);
@@ -90,7 +90,7 @@ public class SpawnManager : MonoBehaviour
     
     void SpawnEnemy1()
     {
-        if(GameObject.Find("PlayerImage") != null)
+        if(GameObject.FindWithTag("Player") != null)
         {
             //create enemy as a child of the parent point of reference gameobject 
             GameObject childObject = Instantiate(enemyPrefab[0], new Vector3(-4, 30, 0), enemyPrefab[0].transform.rotation);
@@ -99,7 +99,7 @@ public class SpawnManager : MonoBehaviour
     }
     void SpawnEnemy1Variant()
     {
-        if (GameObject.Find("PlayerImage") != null)
+        if (GameObject.FindWithTag("Player") != null)
         {
             //create enemy as a child of the parent point of reference gameobject 
             GameObject childObject = Instantiate(enemyPrefab[2], new Vector3(-4, 30, 0), enemyPrefab[0].transform.rotation);
@@ -108,7 +108,7 @@ public class SpawnManager : MonoBehaviour
     }
     void SpawnEnemy2()
     {
-        if (GameObject.Find("PlayerImage") != null)
+        if (GameObject.FindWithTag("Player") != null)
         {
             //create enemy
             Instantiate(enemyPrefab[1], new Vector3(-12, 10, 0), enemyPrefab[1].transform.rotation);
@@ -117,7 +117,7 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnEnemy2Variant()
     {
-        if (GameObject.Find("PlayerImage") != null)
+        if (GameObject.FindWithTag("Player") != null)
         {
             //create enemy
             Instantiate(enemyPrefab[1], new Vector3(-12, 0, 0), enemyPrefab[1].transform.rotation);

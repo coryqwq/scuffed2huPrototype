@@ -11,12 +11,12 @@ public class AmmoFollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.Find("Player") != null)
+        if(GameObject.FindWithTag("Player") != null)
         {
             timer += Time.deltaTime;
             if (timer > 3)
             {
-                position = (GameObject.Find("Player").transform.position + new Vector3(0, 0, 1));
+                position = (GameObject.FindWithTag("Player").transform.position + new Vector3(0, 0, 1));
                 transform.position = Vector3.MoveTowards(transform.position, position, speed * Time.deltaTime);
             }
         }

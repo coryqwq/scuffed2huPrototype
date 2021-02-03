@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4567914660965353600}
   - component: {fileID: 3111299934110749874}
+  - component: {fileID: 4547861816572167153}
   m_Layer: 0
   m_Name: menuhit
   m_TagString: Untagged
@@ -43,7 +44,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2cc3b5d3ac2e6b9418c40cade5e26cf0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.344
+  m_Volume: 0.35
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -127,3 +128,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4547861816572167153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847361743722276252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a2c51e524fa2b48b118f36ad4d88d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

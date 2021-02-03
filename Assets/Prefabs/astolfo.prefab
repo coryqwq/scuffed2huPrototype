@@ -183,6 +183,7 @@ MonoBehaviour:
     type: 3}
   temp: {fileID: 0}
   spawnManagerScript: {fileID: 0}
+  gun1: {fileID: 6617623468719348156, guid: 35dac0b97f0944b4caf66243f9028ba3, type: 3}
 --- !u!136 &203118405
 CapsuleCollider:
   m_ObjectHideFlags: 0

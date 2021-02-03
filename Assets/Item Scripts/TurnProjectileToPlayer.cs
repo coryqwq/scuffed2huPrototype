@@ -11,7 +11,7 @@ public class TurnProjectileToPlayer : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (GameObject.Find("Player") != null && timer < 1.5)
+        if (GameObject.FindWithTag("Player") != null && timer < 1.5)
         {
             Vector2 direction = new Vector2(
             GameObject.Find("Player").transform.position.x - transform.position.x,

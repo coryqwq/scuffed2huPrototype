@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 2356826303822134757}
   - component: {fileID: 2356826303822134763}
   - component: {fileID: 1094364321725121331}
-  - component: {fileID: 1094364321641061428}
   - component: {fileID: 1094364321641061426}
-  - component: {fileID: 7546687044647001673}
+  - component: {fileID: 1540458950}
+  - component: {fileID: 1540458952}
   m_Layer: 0
   m_Name: astolfo 3
   m_TagString: Untagged
@@ -30,9 +30,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2356826303822134753}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.85, y: 17.4, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.7, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -125,42 +125,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1.2
+  m_Radius: 2
+  m_Height: 8
   m_Direction: 0
-  m_Center: {x: 0, y: 0.1, z: 2}
---- !u!114 &1094364321641061428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2356826303822134753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e498e1b8c65dae4bad9646aebe31b9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startDelay1: 0.5
-  spawnInterval1: 0.2
-  startDelay2: 0
-  spawnInterval2: 3
-  startDelay3: 0.7
-  spawnInterval3: 3
-  startDelay4: 1.4
-  spawnInterval4: 3
-  projectilePrefab: {fileID: 8601750939976248063, guid: 694a76d1b1dede141bf02547ad8987af,
-    type: 3}
-  projectilePrefab1: {fileID: 8192333897723499336, guid: a2f11c27ad308fb4e88f79594f508874,
-    type: 3}
-  turnSpeed: 60
-  angleDistance: 0
-  angleOffset: 90
-  angleBound: 360
-  timer: 0
-  phase1: 1
-  phase2: 1
-  phase3: 1
+  m_Center: {x: -0.3, y: 0.5, z: 4}
 --- !u!114 &1094364321641061426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,15 +141,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60cae1ce52adac419cc8eacb902b157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 750
+  currentHP: 750
+  maxHP: 750
+  points: 6900
   spawnAmmoInBulk: {fileID: 4306249661621040965, guid: d94b3ab51daf16e45a8e83cc4ab8dbbf,
     type: 3}
-  projectilePrefab: {fileID: 7824073734145001908, guid: dfc0776b5c7fb7a43aa6d6628f905ca5,
+  projectilePrefab: {fileID: 7824073734145001908, guid: b933461d4a6648e4f9652a98ca92fbdd,
     type: 3}
-  passMsg: {fileID: 5726316810844650817, guid: c97da903e7323c747847e1f63ebc8c95, type: 3}
-  passSound: {fileID: 488272855530069754, guid: 3548b8f72bb4d48438f389abce9feccf,
-    type: 3}
---- !u!114 &7546687044647001673
+  gun2: {fileID: 2145065474123803967, guid: 1a8a35e6de4bd9b44b7363565a72f0a0, type: 3}
+  gun1: {fileID: 6617623468719348156, guid: 35dac0b97f0944b4caf66243f9028ba3, type: 3}
+  healthBar: {fileID: 0}
+  healthBarMax: 0
+--- !u!114 &1540458950
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,11 +161,48 @@ MonoBehaviour:
   m_GameObject: {fileID: 2356826303822134753}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d6c7e00a08cfe942ad0a10c71c8b3a1, type: 3}
+  m_Script: {fileID: 11500000, guid: f7ee55736912e2c458e40ef71d215fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xPos: 0
-  yPos: 11
+  pointOfReferences:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  phases: 0000000000
+  index: 0
   speed: 5
+--- !u!114 &1540458952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2356826303822134753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2db6f091026aa324fb035ff5869f0c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startDelay1: 0.5
+  spawnInterval1: 1.5
+  startDelay2: 0
+  spawnInterval2: 2.7
+  startDelay3: 0.7
+  spawnInterval3: 2.7
+  startDelay4: 1.4
+  spawnInterval4: 2.7
+  projectilePrefabs:
+  - {fileID: 8601750939976248063, guid: e1233db0ac7600844b94815a8beb2483, type: 3}
+  - {fileID: 1053263673275952797, guid: 548894aec92918242b284d8730deb418, type: 3}
+  - {fileID: 3358393965969855516, guid: 2bd20c5ff6b672e44b96231bd707f6a1, type: 3}
+  - {fileID: 7097778103595138146, guid: 62bbb7e2bcbb5a94e83399d2bfc6f0f5, type: 3}
+  - {fileID: 3622826454365613022, guid: a64b84f1ec79f2344805ae7083d403b3, type: 3}
+  projectilePrefab1: {fileID: 8192333897723499336, guid: 55def4b3e789f1142adfb18ad54afe4c,
+    type: 3}
+  timer: 0
   phase1: 1
-  phase2: 0
+  phase2: 1
+  timePhase2: 20
+  phase3: 1

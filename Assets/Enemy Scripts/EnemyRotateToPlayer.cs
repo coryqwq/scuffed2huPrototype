@@ -7,7 +7,7 @@ public class EnemyRotateToPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.Find("Player") != null)
+        if(GameObject.FindWithTag("Player") != null)
         {
             Vector2 direction = new Vector2(
             GameObject.Find("Player").transform.position.x - transform.position.x,

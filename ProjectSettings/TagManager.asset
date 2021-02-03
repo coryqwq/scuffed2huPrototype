@@ -14,6 +14,11 @@ TagManager:
   - CurrentGun
   - Bounds
   - EnemyProjectile
+  - GameState
+  - PlayerImage
+  - PreviousScene
+  - Main Camera
+  - Button
   layers:
   - Default
   - TransparentFX

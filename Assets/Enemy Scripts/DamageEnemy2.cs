@@ -30,8 +30,11 @@ public class DamageEnemy2 : MonoBehaviour
             {
                 temp = Instantiate(ammoPack2, transform.position + new Vector3(0, 0, 1), ammoPack2.transform.rotation);
                 spawnManagerScript.StartCoroutine(spawnManagerScript.CountDown(temp));
-                ScoreCounter scoreCounterScript = GameObject.Find("Main Camera").GetComponent<ScoreCounter>();
-                scoreCounterScript.scoreNumber += 70;
+
+                ScoreCounter scoreCounterScript = GameObject.FindWithTag("MainCamera").GetComponent<ScoreCounter>();
+                GameState gameStateScript = GameObject.FindWithTag("GameState").GetComponent<GameState>();
+                scoreCounterScript.scoreNumber += (int)(70 * gameStateScript.scoreMultiplier);
+                
                 Destroy(gameObject);
 
             }

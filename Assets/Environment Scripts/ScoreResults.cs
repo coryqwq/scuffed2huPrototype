@@ -11,14 +11,14 @@ public class ScoreResults : MonoBehaviour
     public int highScoreCount = 0;
     public int scoreNumber;
     public int scoreCount = 0;
-    public int count = 10;
+    public int count = 102;
     public bool invoked1 = false;
     public bool invoked2 = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        PreviousScene previousSceneScript = GameObject.Find("PreviousScene").GetComponent<PreviousScene>();
+        PreviousScene previousSceneScript = GameObject.FindWithTag("PreviousScene").GetComponent<PreviousScene>();
 
         if (previousSceneScript.previousScene == "SampleScene")
         {
@@ -50,14 +50,13 @@ public class ScoreResults : MonoBehaviour
 
         if (invoked1 == false)
         {
-            highScoreCount += count;
-            highScore.text = "HI-SCORE:" + highScoreCount;
-
-            if (highScoreCount > highScoreNumber - 60)
+            if (highScoreCount >= highScoreNumber - 180)
             {
                 invoked1 = true;
             }
 
+            highScoreCount += count;
+            highScore.text = "HI-SCORE:" + highScoreCount;
         }
 
         if (invoked1 == true)
@@ -71,13 +70,13 @@ public class ScoreResults : MonoBehaviour
 
         if (invoked2 == false)
         {
-            scoreCount += count;
-            score.text = "SCORE:" + scoreCount;
-
-            if (scoreCount > scoreNumber - 60)
+            if (scoreCount >= scoreNumber - 180)
             {
                 invoked2 = true;
             }
+
+            scoreCount += count;
+            score.text = "SCORE:" + scoreCount;
         }
 
         if (invoked2 == true)

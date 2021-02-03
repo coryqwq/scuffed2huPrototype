@@ -11,7 +11,7 @@ public class Scene : MonoBehaviour
     //check to see if player is alive, if not, call method for displaying buttons for quit and retry on player death
     public void Update()
     {
-        if (GameObject.Find("Player") == false && instance == 0)
+        if (GameObject.FindWithTag("Player") == false && instance == 0)
         {
             DisplayQuitAndRetry();
             instance = 1;
@@ -21,7 +21,7 @@ public class Scene : MonoBehaviour
     //display buttons for quit and retry on player death
     public void DisplayQuitAndRetry()
     {
-        if (GameObject.Find("Player") == false)
+        if (GameObject.FindWithTag("Player") == false)
         {
             GameObject newCanvas = Instantiate(canvas) as GameObject;
         }
@@ -34,9 +34,15 @@ public class Scene : MonoBehaviour
         Destroy(GameObject.Find("menuhit(Clone)"));
 
         Instantiate(audioClip);
-        DontDestroyOnLoad(audioClip);
-        DontDestroyOnLoad(GameObject.Find("PreviousScene"));
+        
+
+        if(GameObject.FindWithTag("PreviousScene") != null)
+        {
+            DontDestroyOnLoad(GameObject.FindWithTag("PreviousScene"));
+
+        }
     }
+
     public void StartGame()
     {
         SceneManager.LoadScene("SampleScene");

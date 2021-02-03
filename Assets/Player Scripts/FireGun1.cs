@@ -6,16 +6,16 @@ public class FireGun1 : MonoBehaviour
 {
     public float startDelay = 0.0f;
     public float spawnInterval = 0.05f;
+    public float bulletDamage = 2.0f;
     public GameObject projectilePrefab;
     public GameObject player;
-    public GameObject rifleSfx;
     public PlayerController playerControllerScript;
 
     // Start is called before the first frame update
     void Start()
     {
         //initialize the playerControllerScript object
-        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>(); 
+        playerControllerScript = GameObject.FindWithTag("Player").GetComponent<PlayerController>(); 
 
         //invoking method
         InvokeRepeating("FireGun", startDelay, spawnInterval);

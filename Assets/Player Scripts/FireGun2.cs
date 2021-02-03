@@ -17,11 +17,10 @@ public class FireGun2 : MonoBehaviour
     public GameObject projectilePrefab;
     void Update()
     {
-        PlayerController playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
-        GunManager gunManagerScript = GameObject.Find("Player").GetComponent<GunManager>();
+        PlayerController playerControllerScript = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+        GunManager gunManagerScript = GameObject.FindWithTag("Player").GetComponent<GunManager>();
 
-
-        //reset values when the player is not holding the fire button, so next time, start with first round of shotgun fire
+        //reset values when the player is not holding the fire button
         if (Input.GetMouseButton(0) == false)
         {
             CancelInvoke("FireGun");
@@ -37,11 +36,10 @@ public class FireGun2 : MonoBehaviour
             invoked = true;
         }
     }
-    // Update is called once per frame
     void FireGun()
     {
 
-        PlayerController playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
+        PlayerController playerControllerScript = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
 
         //play shotgun sfx
         AudioSource audio = GetComponent<AudioSource>();

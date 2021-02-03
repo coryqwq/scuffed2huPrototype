@@ -80,7 +80,10 @@
     <Compile Include="Assets\Enemy Scripts\EnemyMovement1.cs" />
     <Compile Include="Assets\Enemy Scripts\EnemyMovement2.cs" />
     <Compile Include="Assets\Enemy Scripts\EnemyRotateToPlayer.cs" />
+    <Compile Include="Assets\Environment Scripts\DontDestroy.cs" />
+    <Compile Include="Assets\Environment Scripts\FPS.cs" />
     <Compile Include="Assets\Environment Scripts\GameState.cs" />
+    <Compile Include="Assets\Environment Scripts\HighlightButtons.cs" />
     <Compile Include="Assets\Environment Scripts\KONSfx.cs" />
     <Compile Include="Assets\Environment Scripts\MoveBackgroundLevelSelect.cs" />
     <Compile Include="Assets\Environment Scripts\MoveBackgroundMain.cs" />

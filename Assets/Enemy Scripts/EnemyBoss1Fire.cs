@@ -24,36 +24,37 @@ public class EnemyBoss1Fire : MonoBehaviour
     public bool phase2 = true;
     public bool phase3 = true;
 
+    GameState gameStateScript;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        gameStateScript = GameObject.FindWithTag("GameState").GetComponent<GameState>();
     }
 
     void Update()
     {
         timer += Time.deltaTime;
-
+        
         if (phase1 == true)
         {
-            InvokeRepeating("FireGun1", startDelay1, spawnInterval1);
+            InvokeRepeating("FireGun1", startDelay1, spawnInterval1 * gameStateScript.spawnIntervalOffset);
             phase1 = false;
         }
 
         if (timer > 18 && phase2 == true)
         {
-            InvokeRepeating("FireGun2", startDelay2, spawnInterval2);
-            InvokeRepeating("FireGun2", startDelay3, spawnInterval3);
-            InvokeRepeating("FireGun2", startDelay4, spawnInterval4);
-            phase2 = false;
+            InvokeRepeating("FireGun2", startDelay2, spawnInterval2 * gameStateScript.spawnIntervalOffset);
+            InvokeRepeating("FireGun2", startDelay3, spawnInterval3 * gameStateScript.spawnIntervalOffset);
+            InvokeRepeating("FireGun2", startDelay4, spawnInterval4 * gameStateScript.spawnIntervalOffset);
+            phase2 = false; 
         }
 
         if (timer > 32 && phase3 == true)
         {
-            InvokeRepeating("FireGun3", startDelay2, spawnInterval2);
-            InvokeRepeating("FireGun3", startDelay3, spawnInterval3);
-            InvokeRepeating("FireGun3", startDelay4, spawnInterval4);
+            InvokeRepeating("FireGun3", startDelay2, spawnInterval2 * gameStateScript.spawnIntervalOffset);
+            InvokeRepeating("FireGun3", startDelay3, spawnInterval3 * gameStateScript.spawnIntervalOffset);
+            InvokeRepeating("FireGun3", startDelay4, spawnInterval4 * gameStateScript.spawnIntervalOffset);
             phase3 = false;
         }
     }
@@ -79,9 +80,9 @@ public class EnemyBoss1Fire : MonoBehaviour
         }
 
         //create projectiles
-        Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(0 + angleOffset, Vector3.forward));
-        Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(40 + angleOffset, Vector3.forward));
-        Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(-40 + angleOffset, Vector3.forward));
+        Instantiate(projectilePrefab, transform.position + new Vector3(0, 0, 1), transform.rotation * Quaternion.AngleAxis(0 + angleOffset, Vector3.forward));
+        Instantiate(projectilePrefab, transform.position + new Vector3(0, 0, 1), transform.rotation * Quaternion.AngleAxis(40 + angleOffset, Vector3.forward));
+        Instantiate(projectilePrefab, transform.position + new Vector3(0, 0, 1), transform.rotation * Quaternion.AngleAxis(-40 + angleOffset, Vector3.forward));
 
     }
 
@@ -89,14 +90,14 @@ public class EnemyBoss1Fire : MonoBehaviour
     {
         int angle = 0;
 
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < 8; i++)
         {
             //set angle of projectile
             projectilePrefab.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             //create projectiles
-            Instantiate(projectilePrefab1, transform.position, projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab1, transform.position + new Vector3(0, 0, 2), projectilePrefab.transform.rotation);
 
-            angle += 40;
+            angle += 45;
         }
     }
 
@@ -104,14 +105,14 @@ public class EnemyBoss1Fire : MonoBehaviour
     {
         int angle = 0;
 
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < 8; i++)
         {
             //set angle of projectile
             projectilePrefab.transform.rotation = Quaternion.AngleAxis(angle + 22.5f, Vector3.forward);
             //create projectiles
-            Instantiate(projectilePrefab1, transform.position, projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab1, transform.position + new Vector3(0, 0, 2), projectilePrefab.transform.rotation);
 
-            angle += 40;
+            angle += 45;
         }
     }
 }
