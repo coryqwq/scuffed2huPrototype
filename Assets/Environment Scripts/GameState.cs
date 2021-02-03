@@ -9,7 +9,8 @@ public class GameState : MonoBehaviour
     public GameObject passSound;
 
     public bool endLevel;
-    public bool invoked;
+    public bool invokedWait = false;
+    public bool invokedPass = false; 
     public bool scoreboardTransition = false;
 
     public float spawnIntervalOffset = 1;
@@ -65,16 +66,29 @@ public class GameState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (endLevel == true && GameObject.FindWithTag("Player") != null && invoked == false)
+        if (endLevel == true && GameObject.FindWithTag("Player") != null)
+        {
+            if(invokedWait == false)
+            {
+                StartCoroutine(Wait());
+                invokedWait = true;
+            }
+        }
+
+        if(endLevel == true && GameObject.FindWithTag("Player") != null && invokedPass == true)
         {
             StartCoroutine(LevelPassed());
-            invoked = true;
+            invokedPass = false;
         }
     }
 
-    IEnumerator LevelPassed()
+    IEnumerator Wait()
     {
         yield return new WaitForSeconds(5);
+        invokedPass = true;
+    }
+    IEnumerator LevelPassed()
+    {
         Instantiate(passMsg, passMsg.transform.position, passMsg.transform.rotation);
         Instantiate(passSound, passMsg.transform.position, passMsg.transform.rotation);
         scoreboardTransition = true;

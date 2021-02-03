@@ -23,7 +23,8 @@ public class ScoreCounter : MonoBehaviour
     void Start()
     {
         gameStateScript = GameObject.FindWithTag("GameState").GetComponent<GameState>();
-        gameStateScript.invoked = false;
+        gameStateScript.invokedWait = false;
+        gameStateScript.invokedPass = false;
         gameStateScript.endLevel = false;
 
 
