@@ -57,10 +57,13 @@ public class ScoreCounter : MonoBehaviour
 
     void Update()
     {
-        //display the current score
-        timer += Time.deltaTime;
-
-        time.text = "TIME:" + timer;
+        //display the time and  score
+        if(GameObject.FindWithTag("Player") != null && gameStateScript.endLevel == false)
+        {
+            timer += Time.deltaTime;
+            time.text = "TIME:" + timer;
+        }
+       
         score.text = "SCORE:" + scoreNumber;
 
         //update the high score and display it
@@ -70,11 +73,12 @@ public class ScoreCounter : MonoBehaviour
             highScore.text = "HI-SCORE:" + highScoreNumber;
         }
 
-        //if player dies, set the key value, and save it
+        //if player dies or passses level, set the key value, and save it
         if (GameObject.FindWithTag("Player") == null || gameStateScript.endLevel == true)
         {
             previousSceneScript = GameObject.FindWithTag("PreviousScene").GetComponent<PreviousScene>();
             previousSceneScript.score = scoreNumber;
+            PlayerPrefs.SetFloat("time", timer);
 
             if (SceneManager.GetActiveScene().name == "SampleScene")
             {

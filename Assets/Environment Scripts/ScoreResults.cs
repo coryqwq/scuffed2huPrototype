@@ -6,6 +6,7 @@ public class ScoreResults : MonoBehaviour
 {
     public Text score;
     public Text highScore;
+    public Text time;
 
     public int highScoreNumber;
     public int highScoreCount = 0;
@@ -19,6 +20,8 @@ public class ScoreResults : MonoBehaviour
     void Start()
     {
         PreviousScene previousSceneScript = GameObject.FindWithTag("PreviousScene").GetComponent<PreviousScene>();
+
+        time.text = "TIME:" + PlayerPrefs.GetFloat("time", 0);
 
         if (previousSceneScript.previousScene == "SampleScene")
         {

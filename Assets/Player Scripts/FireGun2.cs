@@ -14,12 +14,19 @@ public class FireGun2 : MonoBehaviour
 
     public bool invoked;
 
+    GunManager gunManagerScript;
+    PlayerController playerControllerScript;
+
     public GameObject projectilePrefab;
+
+     void Start()
+    {
+        playerControllerScript = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+        gunManagerScript = GameObject.FindWithTag("Player").GetComponent<GunManager>();
+    }
+
     void Update()
     {
-        PlayerController playerControllerScript = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-        GunManager gunManagerScript = GameObject.FindWithTag("Player").GetComponent<GunManager>();
-
         //reset values when the player is not holding the fire button
         if (Input.GetMouseButton(0) == false)
         {

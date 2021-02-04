@@ -6,9 +6,7 @@ public class DamagePlayer : MonoBehaviour
 {
     //declaring and initializing variable
     public float HP = 10;
-    public GameObject deathMsg;
     public GameObject playerImage;
-    public GameObject deathBGM;
     public GameObject bomb;
     public Image[] healthBar;
     public int indexHP = 0;
@@ -33,15 +31,14 @@ public class DamagePlayer : MonoBehaviour
             //if player health equals 0, destroy player gameobject and create death message gameobject
             if (HP <= 0)
             {
+                GameState gameStateScript = GameObject.FindWithTag("GameState").GetComponent<GameState>();
+                gameStateScript.isAlive = false;
+
                 Destroy(playerImage.gameObject);
                 Destroy(GameObject.Find("Gun1(Clone)"));
                 Destroy(GameObject.Find("Gun2(Clone)"));
                 Destroy(GameObject.Find("empty(Clone)"));
-                Destroy(GameObject.Find("Player"));
-
-                Instantiate(deathBGM, deathBGM.transform.position, deathBGM.transform.rotation);
-                Instantiate(deathMsg, deathMsg.transform.position, deathMsg.transform.rotation);
-
+                Destroy(gameObject);
             }
         }
     }

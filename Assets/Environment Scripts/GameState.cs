@@ -7,10 +7,15 @@ public class GameState : MonoBehaviour
 {
     public GameObject passMsg;
     public GameObject passSound;
+    public GameObject deathMsg;
+    public GameObject deathBGM;
 
     public bool endLevel;
+    public bool invokedDeath = false;
     public bool invokedWait = false;
-    public bool invokedPass = false; 
+    public bool invokedPass = false;
+    public bool isAlive = true;
+
     public bool scoreboardTransition = false;
 
     public float spawnIntervalOffset = 1;
@@ -66,7 +71,14 @@ public class GameState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (endLevel == true && GameObject.FindWithTag("Player") != null)
+        if(isAlive == false && invokedDeath == false)
+        {
+            Instantiate(deathBGM, deathBGM.transform.position, deathBGM.transform.rotation);
+            Instantiate(deathMsg, deathMsg.transform.position, deathMsg.transform.rotation);
+            invokedDeath = true;
+        }
+
+        if (endLevel == true && isAlive == true)
         {
             if(invokedWait == false)
             {
@@ -75,7 +87,7 @@ public class GameState : MonoBehaviour
             }
         }
 
-        if(endLevel == true && GameObject.FindWithTag("Player") != null && invokedPass == true)
+        if(endLevel == true && isAlive == true  && invokedPass == true)
         {
             StartCoroutine(LevelPassed());
             invokedPass = false;

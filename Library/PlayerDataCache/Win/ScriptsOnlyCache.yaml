@@ -685,6 +685,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12308}
     - Class: 114
+      Script: {instanceID: 12622}
+    - Class: 114
       Script: {instanceID: 13470}
     - Class: 114
       Script: {instanceID: 13814}
@@ -753,6 +755,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12290}
     - Class: 114
       Script: {instanceID: 12308}
+    - Class: 114
+      Script: {instanceID: 12622}
     - Class: 114
       Script: {instanceID: 13470}
     - Class: 114
@@ -1103,7 +1107,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 81eec10ad01ca46f10490d859c83e524
+      Hash: 03fb90fac92c8a1d84e07b9d600efb7f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameState
@@ -1415,7 +1419,7 @@ ScriptsOnlyBuild:
     className: DamageEnemyBoss
   - hash:
       serializedVersion: 2
-      Hash: 7519f2a9b4e0b358ec043787725bdb24
+      Hash: 5dddb05d70266e43518a3046cb6b0e2f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DamagePlayer
@@ -1631,7 +1635,7 @@ ScriptsOnlyBuild:
     className: PreviousScene
   - hash:
       serializedVersion: 2
-      Hash: bcc5d351fd822d7b0be92bbc17f7fa29
+      Hash: b77b2d5ec3a109343d2e87ee3f087805
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScoreResults
@@ -1662,5 +1666,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/SampleScene 2.unity
   - Assets/Scenes/SampleScene 3.unity
   - Assets/Scenes/TitleScene 2.unity
-  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.12.1/2d
+  playerPath: C:/Users/coryk/Desktop/unity projects/finished prototypes/scuffed2huPrototype_v1.12.2/2d
     movement prototype.exe
