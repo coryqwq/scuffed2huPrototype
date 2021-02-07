@@ -18,7 +18,7 @@ public class MoveBackgroundSides : MonoBehaviour
         //spawn new image when current image is at -22 on the y axis
         if (transform.position.y < 0  && spawned == false)
         {
-            Instantiate(bg, new Vector3(7.64f, 40, -8), transform.rotation);
+            Instantiate(bg, new Vector3(7.15f, 40, -8), transform.rotation);
             spawned = true;
         }
 

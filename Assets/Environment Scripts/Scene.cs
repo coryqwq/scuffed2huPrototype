@@ -8,6 +8,9 @@ public class Scene : MonoBehaviour
     public GameObject canvas;
     public AudioSource audioClip;
 
+    public Animator transition;
+    public float transitionTime = 0.21f;
+
     //check to see if player is alive, if not, call method for displaying buttons for quit and retry on player death
     public void Update()
     {
@@ -45,41 +48,91 @@ public class Scene : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        StartCoroutine(Transition());
     }
     public void StartGame1()
     {
-        SceneManager.LoadScene("SampleScene 1");
+        StartCoroutine(Transition1());
     }
 
     public void StartGame2()
     {
-        SceneManager.LoadScene("SampleScene 2");
+        StartCoroutine(Transition2());
     }
     public void StartGame3()
     {
-        SceneManager.LoadScene("SampleScene 3");
+        StartCoroutine(Transition3());
     }
 
     //load current scene
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        StartCoroutine(Transition4());
     }
 
     //load title scene
     public void Title()
     {
-        SceneManager.LoadScene("TitleScene");
+        StartCoroutine(Transition5());
     }
     public void LevelSelect()
     {
-        SceneManager.LoadScene("TitleScene 1");
+        StartCoroutine(Transition6());
     }
 
     //quit program
     public void QuitGame()
     {
+        StartCoroutine(Transition7());
+    }
+
+    IEnumerator Transition()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    IEnumerator Transition1()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadScene("SampleScene 1");
+    }
+    IEnumerator Transition2()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadScene("SampleScene 2");
+    }
+    IEnumerator Transition3()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadScene("SampleScene 3");
+    }
+    IEnumerator Transition4()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    IEnumerator Transition5()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadScene("TitleScene");
+    }
+    IEnumerator Transition6()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadScene("TitleScene 1");
+    }
+    IEnumerator Transition7()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(1);
         Application.Quit();
     }
 }

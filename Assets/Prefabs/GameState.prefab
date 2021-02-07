@@ -50,9 +50,13 @@ MonoBehaviour:
     type: 3}
   deathBGM: {fileID: 6315039885049710715, guid: 76fb8db4c91a2b9409c23530d017f3e1,
     type: 3}
+  transition: {fileID: 3115912637625157451, guid: 9535c9a89ec78eb44be86e28fddc0567,
+    type: 3}
   endLevel: 0
+  invokedDeath: 0
   invokedWait: 0
   invokedPass: 0
+  isAlive: 1
   scoreboardTransition: 0
   spawnIntervalOffset: 0
   projectileSpeedOffset: 0

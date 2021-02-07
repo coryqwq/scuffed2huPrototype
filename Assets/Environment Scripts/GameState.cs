@@ -9,6 +9,7 @@ public class GameState : MonoBehaviour
     public GameObject passSound;
     public GameObject deathMsg;
     public GameObject deathBGM;
+    public Animator transition;
 
     public bool endLevel;
     public bool invokedDeath = false;
@@ -104,8 +105,11 @@ public class GameState : MonoBehaviour
         Instantiate(passMsg, passMsg.transform.position, passMsg.transform.rotation);
         Instantiate(passSound, passMsg.transform.position, passMsg.transform.rotation);
         scoreboardTransition = true;
-
         yield return new WaitForSeconds(2);
+
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(1);
+
         DontDestroyOnLoad(GameObject.Find("PreviousScene"));
         SceneManager.LoadScene("TitleScene 2");
     }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9174428141435309997}
   - component: {fileID: 9160998539808546640}
   - component: {fileID: -6172159630913079510}
-  - component: {fileID: 1918319224542736114}
+  - component: {fileID: 334422469366354934}
   m_Layer: 0
   m_Name: coomPrefab
   m_TagString: Projectile
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: dc6a952a884b2b045b6e34d5f61bf615, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 14fd2362af8026c49867dd69d2779a34, type: 3}
   m_Color: {r: 1, g: 0.25943398, b: 0.25943398, a: 1}
   m_FlipX: 0
   m_FlipY: 1
@@ -125,7 +125,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.8, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1918319224542736114
+--- !u!114 &334422469366354934
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,3 +137,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c34c9d59c402ec4195f9f4847e31525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particles: {fileID: 2457557990035017747, guid: fd68ca31ea62ad444963a347f63e29cc,
+    type: 3}

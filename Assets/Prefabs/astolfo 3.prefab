@@ -11,14 +11,13 @@ GameObject:
   - component: {fileID: 2356826303822134759}
   - component: {fileID: 2356826303822134752}
   - component: {fileID: 2356826303822134757}
-  - component: {fileID: 2356826303822134763}
   - component: {fileID: 1094364321725121331}
   - component: {fileID: 1094364321641061426}
   - component: {fileID: 1540458950}
   - component: {fileID: 1540458952}
   m_Layer: 0
   m_Name: astolfo 3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b2df2f10543bd7f4da4056290ae17588, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cc81e10083156b648bac25d367505eba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,18 +102,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2356826303822134763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2356826303822134753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c34c9d59c402ec4195f9f4847e31525, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &1094364321725121331
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3150253516433629776}
   - component: {fileID: 3150253516433629783}
   - component: {fileID: 3150253516433629778}
-  - component: {fileID: 3150253516433629788}
   - component: {fileID: -5040014099697245879}
   - component: {fileID: 39477862}
   - component: {fileID: 8149160821465490923}
@@ -19,7 +18,7 @@ GameObject:
   - component: {fileID: 6849228151496023723}
   m_Layer: 0
   m_Name: astolfo 2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b138d38f840b7d942a5b8b13af3c0b47, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 112e836d6488c134693bf0839a1df0dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,18 +103,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 48
   m_CollisionDetection: 0
---- !u!114 &3150253516433629788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3150253516433629782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c34c9d59c402ec4195f9f4847e31525, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-5040014099697245879
 MonoBehaviour:
   m_ObjectHideFlags: 0
