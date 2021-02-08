@@ -1361,6 +1361,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2956076341910471247, guid: 1c305bcc125f0244f93efb39741dc33b,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2956076341910471247, guid: 1c305bcc125f0244f93efb39741dc33b,
+        type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 69dc0739a7cea534a9ffebfdb8f1258a, type: 3}
@@ -1759,6 +1764,11 @@ PrefabInstance:
       propertyPath: highScore
       value: 
       objectReference: {fileID: 1619701119}
+    - target: {fileID: 3989691841340486046, guid: be989b33563d3954288a77dc409daf54,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3989691841568026959, guid: be989b33563d3954288a77dc409daf54,
         type: 3}
       propertyPath: m_Name
