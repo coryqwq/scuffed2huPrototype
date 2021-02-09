@@ -46,19 +46,17 @@ public class FireGun2 : MonoBehaviour
     void FireGun()
     {
 
-        PlayerController playerControllerScript = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-
         //play shotgun sfx
         AudioSource audio = GetComponent<AudioSource>();
         audio.Play();
 
         //create projectiles
         Instantiate(projectilePrefab, transform.position + new Vector3(0, 0, 2),
-                   transform.rotation * Quaternion.AngleAxis(0, Vector3.forward));
+                   GameObject.FindWithTag("PlayerImage").transform.rotation * Quaternion.AngleAxis(0, Vector3.forward));
         Instantiate(projectilePrefab, transform.position + new Vector3(0, 0, 2),
-                   transform.rotation * Quaternion.AngleAxis(bulletSpread, Vector3.forward));
+                   GameObject.FindWithTag("PlayerImage").transform.rotation * Quaternion.AngleAxis(bulletSpread, Vector3.forward));
         Instantiate(projectilePrefab, transform.position + new Vector3(0, 0, 2),
-                   transform.rotation * Quaternion.AngleAxis(-bulletSpread, Vector3.forward));
+                   GameObject.FindWithTag("PlayerImage").transform.rotation * Quaternion.AngleAxis(-bulletSpread, Vector3.forward));
 
         playerControllerScript.ammoCount2 -= 3;
     }

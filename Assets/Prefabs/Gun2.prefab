@@ -103,6 +103,8 @@ MonoBehaviour:
   bulletSpread: 10
   bulletDamage: 5
   invoked: 0
+  playerImage: {fileID: 5067567347743120950, guid: da75c11fedeee0344b19ba280c9faf3a,
+    type: 3}
   projectilePrefab: {fileID: 3616463822494905802, guid: 267a8f9d94a9a0140b1bfbae930e3bab,
     type: 3}
 --- !u!114 &2490868822094988812
