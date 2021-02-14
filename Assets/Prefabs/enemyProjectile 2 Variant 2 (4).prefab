@@ -100,8 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33de990cdbc7e1840b65a931b444ba5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xBound: 24
-  yBound: 13.5
+  xBound: 30
+  yBound: 20
 --- !u!65 &8330800485698308553
 BoxCollider:
   m_ObjectHideFlags: 0

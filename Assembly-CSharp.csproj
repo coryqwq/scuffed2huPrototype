@@ -73,6 +73,7 @@
     <Compile Include="Assets\Enemy Scripts\DestroyEnemyOutOfBounds.cs" />
     <Compile Include="Assets\Enemy Scripts\EnemyBoss1Fire.cs" />
     <Compile Include="Assets\Enemy Scripts\EnemyBoss2Fire.cs" />
+    <Compile Include="Assets\Enemy Scripts\EnemyBoss3Fire.cs" />
     <Compile Include="Assets\Enemy Scripts\EnemyFire1.cs" />
     <Compile Include="Assets\Enemy Scripts\EnemyFire2.cs" />
     <Compile Include="Assets\Enemy Scripts\EnemyMovement.cs" />
@@ -80,6 +81,9 @@
     <Compile Include="Assets\Enemy Scripts\EnemyMovement2.cs" />
     <Compile Include="Assets\Enemy Scripts\EnemyRotateToPlayer.cs" />
     <Compile Include="Assets\Environment Scripts\ButtonHoverSfx.cs" />
+    <Compile Include="Assets\Environment Scripts\Dialogue.cs" />
+    <Compile Include="Assets\Environment Scripts\DialogueManager.cs" />
+    <Compile Include="Assets\Environment Scripts\DialogueTrigger.cs" />
     <Compile Include="Assets\Environment Scripts\DontDestroy.cs" />
     <Compile Include="Assets\Environment Scripts\FPS.cs" />
     <Compile Include="Assets\Environment Scripts\GameState.cs" />
@@ -97,6 +101,7 @@
     <Compile Include="Assets\Item Scripts\BombExpansion.cs" />
     <Compile Include="Assets\Item Scripts\DelayedMoveProjectileForward.cs" />
     <Compile Include="Assets\Item Scripts\DestroyOutOfBounds.cs" />
+    <Compile Include="Assets\Item Scripts\DestroyParticleSystem.cs" />
     <Compile Include="Assets\Item Scripts\DestroyPlayerProjectile.cs" />
     <Compile Include="Assets\Item Scripts\FollowMouse.cs" />
     <Compile Include="Assets\Item Scripts\GunFollowPlayer.cs" />

@@ -20,6 +20,7 @@ TagManager:
   - Main Camera
   - Button
   - Enemy
+  - Dialogue
   layers:
   - Default
   - TransparentFX

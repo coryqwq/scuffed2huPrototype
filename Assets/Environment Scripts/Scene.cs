@@ -67,11 +67,10 @@ public class Scene : MonoBehaviour
     //load current scene
     public void RestartGame()
     {
-        Debug.Log("The object", this);
-        Debug.Break();
-        StartCoroutine(Transition4());
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        // StartCoroutine(Transition4());
+        //Debug.Log("The object", this);
+        //Debug.Break();
+        //StartCoroutine(Transition4());
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     //load title scene
@@ -113,7 +112,7 @@ public class Scene : MonoBehaviour
     {
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitionTime);
-        SceneManager.LoadScene("SampleScene 3");
+        SceneManager.LoadScene("SampleScene 4");
     }
     IEnumerator Transition4()
     {

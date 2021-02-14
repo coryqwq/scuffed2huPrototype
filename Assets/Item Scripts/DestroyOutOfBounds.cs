@@ -5,8 +5,8 @@ using UnityEngine;
 public class DestroyOutOfBounds : MonoBehaviour
 {
     //declaring and initializing bound
-    public float xBound = 24f;
-    public float yBound = 13.5f;
+    public float xBound = 30f;
+    public float yBound = 15.5f;
 
     // Update is called once per frame
     void Update()
