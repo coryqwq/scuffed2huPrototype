@@ -1956,7 +1956,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 25, y: -57}
-  m_SizeDelta: {x: 650, y: 100}
+  m_SizeDelta: {x: 1000, y: 200}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1716936280
 GameObject:
@@ -2108,8 +2108,8 @@ MonoBehaviour:
   - name: XANDIER59
     sentences:
     - YOU NEW? FUCKING FILTHY CASULS AND NORMIES DONT HAVE A PLACE HERE.
-    - 'LISTEN UP! Use the WASD or ARROW keys to move, use the left mouse buttons
-      to shoot your gun, and hold shift to slow your movement. '
+    - 'LISTEN UP! Use the WASD or ARROW keys to move, use the left mouse button to
+      shoot your gun, and hold shift to slow your movement. '
   - name: GUNSLINGER
     sentences:
     - ok got it  XD
@@ -2137,6 +2137,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 513384813857953967, guid: c02638bceed390640a142e3a3bfc8690,
+        type: 3}
+      propertyPath: m_Text
+      value: 'v1.14.4
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 4815546237130110824, guid: c02638bceed390640a142e3a3bfc8690,
         type: 3}
       propertyPath: m_Camera
