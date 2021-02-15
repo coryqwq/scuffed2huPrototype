@@ -78,7 +78,7 @@ public class EnemyBoss3Fire : MonoBehaviour
     IEnumerator ChargingVFX()
     {
         yield return new WaitForSeconds(1);
-        InvokeRepeating("ChargeVFX", 0, 0.2f);
+        InvokeRepeating("ChargeVFX", 0, 0.1f);
 
         StartCoroutine(FireGun3Delay());
     }
