@@ -7,8 +7,6 @@ public class DialogueManager : MonoBehaviour
     public GameObject enemy;
     public GameObject spawnManager;
     public GameObject player;
-    public GameObject gun1;
-    public GameObject gun2;
 
     public Text nameText;
     public Text dialogueText;
@@ -22,12 +20,25 @@ public class DialogueManager : MonoBehaviour
     public Queue<string> sentences;
     public int index = 0;
 
+    public bool fireEnabled = false;
+
     DialogueTrigger dialogueTriggerScript;
+
+    private void Update()
+    {
+
+        if (GameObject.Find("Gun1(Clone)") && fireEnabled == false)
+        {
+            GameObject.Find("Gun1(Clone)").GetComponent<FireGun1>().enabled = false;
+        }
+
+        if (GameObject.Find("Gun2(Clone)") && fireEnabled == false)
+        {
+            GameObject.Find("Gun2(Clone)").GetComponent<FireGun2>().enabled = false;
+        }
+    }
     public void StartDialogue(Dialogue[] dialogue)
     {
-        gun1.GetComponent<FireGun1>().enabled = false;
-        gun2.GetComponent<FireGun2>().enabled = false;
-
         dialogueTriggerScript = GameObject.FindWithTag("Dialogue").GetComponent<DialogueTrigger>();
 
         //initialize array of character names
@@ -172,10 +183,9 @@ public class DialogueManager : MonoBehaviour
         enemy.SetActive(true);
         spawnManager.SetActive(true);
 
-        gun1.GetComponent<FireGun1>().enabled = true;
-        gun2.GetComponent<FireGun2>().enabled = true;
+        fireEnabled = true;
 
-        if(GameObject.Find("Gun1(Clone)") != null)
+        if (GameObject.Find("Gun1(Clone)") != null)
         {
             GameObject.FindWithTag("CurrentGun").GetComponent<FireGun1>().enabled = true;
         }

@@ -106,7 +106,7 @@ MonoBehaviour:
   xInput: 0
   yInput: 0
   speedRun: 15
-  speedWalk: 9
+  speedWalk: 7
   ammoCount: 120
   ammoCount2: 120
   ammo1: {fileID: 0}
@@ -171,11 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 12
-  deathMsg: {fileID: 8616045050362645594, guid: ebd38a87342812d48b80e2088a32d94b,
-    type: 3}
   playerImage: {fileID: 0}
-  deathBGM: {fileID: 6315039885049710715, guid: 76fb8db4c91a2b9409c23530d017f3e1,
-    type: 3}
   bomb: {fileID: 523308410399526137, guid: ac2866d63623e41468111d8dd720ce7e, type: 3}
   healthBar:
   - {fileID: 0}

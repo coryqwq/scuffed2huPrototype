@@ -41,7 +41,7 @@ public class ScoreResults : MonoBehaviour
             scoreNumber = previousSceneScript.score;
         }
 
-        if (previousSceneScript.previousScene == "SampleScene 3")
+        if (previousSceneScript.previousScene == "SampleScene 4")
         {
             highScoreNumber = PlayerPrefs.GetInt("highscorelvl4", 0);
             scoreNumber = previousSceneScript.score;

@@ -41,7 +41,7 @@ public class BossMovement1 : MonoBehaviour
         if(phase2 == true)
         {
             //increment an x value for calculating and setting x,y coordintes of gameobect to elliptical path
-            xPos += Time.deltaTime;
+            xPos += Time.deltaTime * speed * 0.3f;
             transform.localPosition = new Vector2(0f + (4f * Mathf.Sin(xPos)),
                                                  -1f + (1f * Mathf.Cos(xPos)));
         }

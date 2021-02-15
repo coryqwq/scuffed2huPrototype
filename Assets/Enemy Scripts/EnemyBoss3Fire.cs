@@ -12,17 +12,20 @@ public class EnemyBoss3Fire : MonoBehaviour
     public float spawnInterval2 = 2.7f;
     public float startDelay3 = 0.7f;
     public float spawnInterval3 = 2.7f;
-    public float startDelay4 = 1.4f;
-    public float spawnInterval4 = 2.7f;
     public float spawnDelay = 0.0f;
+
     public GameObject projectilePrefabs;
     public GameObject[] projectilePrefab;
     public GameObject projectilePrefab1;
+    public GameObject projectilePrefab2;
+
+    public GameObject charge;
+
     public float angleOffset = 0;
     public float timer = 0;
+
     public bool phase1 = true;
     public bool phase2 = true;
-    public float timePhase2 = 5;
     public bool phase3 = true;
 
     GameState gameStateScript;
@@ -44,40 +47,75 @@ public class EnemyBoss3Fire : MonoBehaviour
             float delay = 0;
             for (int i = 0; i < 12; i++)
             {
-                delay += 0.2f;
+                delay += 0.3f;
                 InvokeRepeating("FireGun1", startDelay1 + delay, spawnInterval1 * gameStateScript.spawnIntervalOffset);
 
             }
             phase1 = false;
         }
-        /*
-        if (timer > timePhase2 && phase2 == true)
+        
+        if (timer > 3 && phase2 == true)
         {
-            InvokeRepeating("FireGun2", startDelay2, spawnInterval2 * gameStateScript.spawnIntervalOffset);
-            InvokeRepeating("FireGun2", startDelay3, spawnInterval3 * gameStateScript.spawnIntervalOffset);
-            InvokeRepeating("FireGun2", startDelay4, spawnInterval4 * gameStateScript.spawnIntervalOffset);
+            float delay = 0;
+            for (int i = 0; i < 6; i++)
+            {
+                delay += 0.5f;
+                InvokeRepeating("FireGun2", startDelay2 + delay, spawnInterval2 * gameStateScript.spawnIntervalOffset);
+
+            }
             phase2 = false;
         }
 
-        if (timer > 35 && phase3 == true)
+        if (timer > 25 && phase3 == true)
         {
-            InvokeRepeating("FireGun3", startDelay2, spawnInterval2 * gameStateScript.spawnIntervalOffset);
-            InvokeRepeating("FireGun3", startDelay3, spawnInterval3 * gameStateScript.spawnIntervalOffset);
-            InvokeRepeating("FireGun3", startDelay4, spawnInterval4 * gameStateScript.spawnIntervalOffset);
+            CancelInvoke();
+            StartCoroutine(ChargingVFX());
+
             phase3 = false;
         }
-        */
     }
+
+    IEnumerator ChargingVFX()
+    {
+        yield return new WaitForSeconds(1);
+        InvokeRepeating("ChargeVFX", 0, 0.2f);
+
+        StartCoroutine(FireGun3Delay());
+    }
+    IEnumerator FireGun3Delay()
+    {
+        yield return new WaitForSeconds(1);
+        CancelInvoke();
+
+        yield return new WaitForSeconds(1);
+        InvokeRepeating("FireGun3", startDelay3, spawnInterval3 * gameStateScript.spawnIntervalOffset);
+
+        yield return new WaitForSeconds(2);
+
+        float delay = 0;
+        for (int i = 0; i < 12; i++)
+        {
+            delay += 0.4f;
+            InvokeRepeating("FireGun1", startDelay1 + delay, spawnInterval1 * gameStateScript.spawnIntervalOffset);
+
+        }
+
+    }
+
+    void ChargeVFX()
+    {
+        Instantiate(charge, transform.position, transform.rotation);
+    } 
 
     void FireGun1()
     {
         int angle = 0;
         //create projectiles
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < 8; i++)
         {
             Instantiate(projectilePrefabs, transform.position + new Vector3(0, 0, -1), transform.rotation * Quaternion.AngleAxis(angle + angleOffset, Vector3.forward));
             Instantiate(projectilePrefabs, transform.position + new Vector3(0, 0, -1), transform.rotation * Quaternion.AngleAxis(angle + angleOffset + 180, Vector3.forward));
-            angle += 10;
+            angle += 7;
         }
 
         angleOffset += 5;
@@ -88,7 +126,7 @@ public class EnemyBoss3Fire : MonoBehaviour
         //create projectiles
         for (int index = 0; index < projectilePrefab.Length; index++)
         {
-            spawnDelay += 0.1f;
+            spawnDelay += 0.05f;
             StartCoroutine(projectileSpawnDelay(index));
         }
     }
@@ -97,37 +135,35 @@ public class EnemyBoss3Fire : MonoBehaviour
     {
         yield return new WaitForSeconds(spawnDelay);
         Instantiate(projectilePrefab[index], transform.position + new Vector3(0, 0, -1), transform.rotation);
-        
-
+       
     }
 
     void FireGun2()
     {
         int angle = 0;
-
-        for (int i = 0; i < 8; i++)
+        //create projectiles
+        for (int i = 0; i < 4; i++)
         {
-            //set angle of projectile
-            projectilePrefab1.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-            //create projectiles
-            Instantiate(projectilePrefab1, transform.position + new Vector3(0, 0, 1), projectilePrefab1.transform.rotation);
-
-            angle += 45;
+            Instantiate(projectilePrefab1, transform.position + new Vector3(0, 0, -1), transform.rotation * Quaternion.AngleAxis(-90 + angle + angleOffset, Vector3.forward));
+            Instantiate(projectilePrefab1, transform.position + new Vector3(0, 0, -1), transform.rotation * Quaternion.AngleAxis(90 + angle + angleOffset, Vector3.forward));
+            angle += 20;
         }
+
+        angleOffset += 1;
     }
 
     void FireGun3()
     {
         int angle = 0;
 
-        for (int i = 0; i < 8; i++)
+        for (int i = 0; i < 9; i++)
         {
             //set angle of projectile
-            projectilePrefab1.transform.rotation = Quaternion.AngleAxis(angle + 22.5f, Vector3.forward);
+            projectilePrefab1.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             //create projectiles
-            Instantiate(projectilePrefab1, transform.position + new Vector3(0, 0, 1), projectilePrefab1.transform.rotation);
+            Instantiate(projectilePrefab2, transform.position + new Vector3(0, 0, 1), projectilePrefab1.transform.rotation);
 
-            angle += 45;
+            angle += 40;
         }
     }
 }

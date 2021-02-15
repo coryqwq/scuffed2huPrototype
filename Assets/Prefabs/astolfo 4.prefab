@@ -13,15 +13,15 @@ GameObject:
   - component: {fileID: 1807649933468291938}
   - component: {fileID: 3930735985967902132}
   - component: {fileID: 3930735986018448053}
-  - component: {fileID: 4153217159950903105}
-  - component: {fileID: 4153217159950903119}
+  - component: {fileID: 1648393452}
+  - component: {fileID: 1648393454}
   m_Layer: 0
-  m_Name: astolfo 3 1
+  m_Name: astolfo 4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1807649933468291936
 Transform:
   m_ObjectHideFlags: 0
@@ -29,9 +29,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807649933468291942}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.85, y: 17.4, z: 1}
-  m_LocalScale: {x: 0.7, y: 0.6, z: 1}
+  m_LocalScale: {x: 1.6, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -112,10 +112,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 2
-  m_Height: 8
+  m_Radius: 1.5
+  m_Height: 3.5
   m_Direction: 0
-  m_Center: {x: -0.3, y: 0.5, z: 4}
+  m_Center: {x: 0, y: -0.2, z: 4}
 --- !u!114 &3930735986018448053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,18 +128,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60cae1ce52adac419cc8eacb902b157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHP: 750
-  maxHP: 750
-  points: 6969
+  currentHP: 850
+  maxHP: 850
+  points: 696969
   spawnAmmoInBulk: {fileID: 4306249661621040965, guid: d94b3ab51daf16e45a8e83cc4ab8dbbf,
     type: 3}
-  projectilePrefab: {fileID: 7824073734145001908, guid: b933461d4a6648e4f9652a98ca92fbdd,
+  projectilePrefab: {fileID: 2110784417886430852, guid: d9d0cbacb20c48145b29bfbf2d482e00,
     type: 3}
   gun2: {fileID: 2145065474123803967, guid: 1a8a35e6de4bd9b44b7363565a72f0a0, type: 3}
   gun1: {fileID: 6617623468719348156, guid: 35dac0b97f0944b4caf66243f9028ba3, type: 3}
   healthBar: {fileID: 0}
   healthBarMax: 0
---- !u!114 &4153217159950903105
+--- !u!114 &1648393452
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,48 +148,52 @@ MonoBehaviour:
   m_GameObject: {fileID: 1807649933468291942}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7ee55736912e2c458e40ef71d215fb7, type: 3}
+  m_Script: {fileID: 11500000, guid: b319ab632ef1e6f448895401cc8e393b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointOfReferences:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  phases: 0000000000
-  index: 0
-  speed: 5
---- !u!114 &4153217159950903119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1807649933468291942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db6f091026aa324fb035ff5869f0c49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startDelay1: 0.5
-  spawnInterval1: 1.5
-  startDelay2: 0
-  spawnInterval2: 2.7
-  startDelay3: 0.7
-  spawnInterval3: 2.7
-  startDelay4: 1.4
-  spawnInterval4: 2.7
-  projectilePrefabs:
-  - {fileID: 8601750939976248063, guid: e1233db0ac7600844b94815a8beb2483, type: 3}
-  - {fileID: 1053263673275952797, guid: 548894aec92918242b284d8730deb418, type: 3}
-  - {fileID: 3358393965969855516, guid: 2bd20c5ff6b672e44b96231bd707f6a1, type: 3}
-  - {fileID: 7097778103595138146, guid: 62bbb7e2bcbb5a94e83399d2bfc6f0f5, type: 3}
-  - {fileID: 3622826454365613022, guid: a64b84f1ec79f2344805ae7083d403b3, type: 3}
-  projectilePrefab1: {fileID: 8192333897723499336, guid: 55def4b3e789f1142adfb18ad54afe4c,
+  startDelay1: 0.1
+  spawnInterval1: 3.5
+  startDelay1_1: 0.5
+  spawnInterval1_1: 4
+  startDelay2: 0.1
+  spawnInterval2: 2.5
+  startDelay3: 0.1
+  spawnInterval3: 0.05
+  spawnDelay: 0
+  projectilePrefabs: {fileID: 9024722542703643243, guid: 0c428c9d602e0224085b95fcbe49e00f,
     type: 3}
+  projectilePrefab:
+  - {fileID: 17203707266994054, guid: bfb1cfbeef2eec3428389d1d10930684, type: 3}
+  - {fileID: 4952622959081832208, guid: 6a33d55e38f8af54e944c16499288ea4, type: 3}
+  - {fileID: 6122766376542053217, guid: 9d429fd4644e7e849ba4cde3a9001888, type: 3}
+  - {fileID: 566708111167167016, guid: 6c673ec918ea87a45a244c409d833038, type: 3}
+  - {fileID: 7801542815628874334, guid: 411f3dadcc201574b8a169beda8732c1, type: 3}
+  - {fileID: 1089842126635621888, guid: e3dff25f4f7fa3d498c8e0dd437d0e90, type: 3}
+  - {fileID: 4003820623471054005, guid: 62fa6896d68f1f94fa2265565de0d12a, type: 3}
+  projectilePrefab1: {fileID: 329281599947822003, guid: f5090a92c9ca1f742a509885ac871171,
+    type: 3}
+  projectilePrefab2: {fileID: 8792229530831788722, guid: c985221fea0f0af42aecae11d4920f5a,
+    type: 3}
+  charge: {fileID: 7278215608051960185, guid: 2a2b0faf4b0a9fa4b91033830383fb33, type: 3}
+  angleOffset: 0
   timer: 0
   phase1: 1
   phase2: 1
-  timePhase2: 20
   phase3: 1
+--- !u!114 &1648393454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807649933468291942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d6c7e00a08cfe942ad0a10c71c8b3a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xPos: 0
+  yPos: 14
+  speed: 5
+  phase1: 1
+  phase2: 0

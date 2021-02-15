@@ -48,7 +48,7 @@ public class ScoreCounter : MonoBehaviour
             highScoreNumber = PlayerPrefs.GetInt("highscorelvl3", 0);
         }
 
-        if (SceneManager.GetActiveScene().name == "SampleScene 3")
+        if (SceneManager.GetActiveScene().name == "SampleScene 4")
         {
             highScore.text = "HI-SCORE:" + PlayerPrefs.GetInt("highscorelvl4", 0);
             highScoreNumber = PlayerPrefs.GetInt("highscorelvl4", 0);
@@ -95,7 +95,7 @@ public class ScoreCounter : MonoBehaviour
                 PlayerPrefs.SetInt("highscorelvl3", highScoreNumber);
             }
 
-            if (SceneManager.GetActiveScene().name == "SampleScene 3")
+            if (SceneManager.GetActiveScene().name == "SampleScene 4")
             {
                 PlayerPrefs.SetInt("highscorelvl4", highScoreNumber);
             }

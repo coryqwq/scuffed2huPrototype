@@ -103,6 +103,7 @@ MonoBehaviour:
     type: 3}
   player: {fileID: 2956076341910471234, guid: 1c305bcc125f0244f93efb39741dc33b, type: 3}
   playerControllerScript: {fileID: 0}
+  timer: 0
 --- !u!114 &2942528214630172905
 MonoBehaviour:
   m_ObjectHideFlags: 0
