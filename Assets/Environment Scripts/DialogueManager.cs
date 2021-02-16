@@ -17,6 +17,10 @@ public class DialogueManager : MonoBehaviour
     public ArrayList names = new ArrayList();
     public int animIndex = 1;
 
+    public AudioSource voice;
+    public AudioClip[] voiceLine;
+    public int voiceIndex = 0;
+
     public Queue<string> sentences;
     public int index = 0;
 
@@ -86,19 +90,16 @@ public class DialogueManager : MonoBehaviour
             anim[animIndex].SetBool("IsSpeaking", false);
         }
 
-        //display name of current character speaking
-        nameText.text = dialogueTriggerScript.dialogue[index].name;
-
         //compare all names in names arraylist to that of current character speaking
         //to assign animIndex based on nameindex 
         //to get an index for starting/stoping anim that corresponds to the current character speaking
-        for(int i = 0; i < names.Count; i++)
+        for (int i = 0; i < names.Count; i++)
         {
             if((string)names[i] == dialogueTriggerScript.dialogue[index].name)
             {
-                //offset animIndex by 2
                 //note: the names arraylist starts counting from 0
                 //0 and 1 for animIndex is reserved for the dialogue box and background anim
+                //offset animIndex by +2 to access animation array starting from element 2
                 animIndex = i + 2;
             }
         }
@@ -107,7 +108,17 @@ public class DialogueManager : MonoBehaviour
         //and set the sentences queue for next sentence of the current character
         if (typing == false)
         {
+            //display name of current character speaking
+            nameText.text = dialogueTriggerScript.dialogue[index].name;
+
             anim[animIndex].SetBool("IsSpeaking", true);
+
+            //assign and play voice line
+            voice.Stop();
+            voice.clip = voiceLine[voiceIndex];
+            voice.Play();
+            voiceIndex++;
+
             string sentence = sentences.Dequeue();
             StartCoroutine(TypeSentence(sentence));
             return;

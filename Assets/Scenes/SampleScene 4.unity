@@ -1093,6 +1093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 935604384}
   - component: {fileID: 935604382}
+  - component: {fileID: 935604385}
   - component: {fileID: 935604383}
   m_Layer: 0
   m_Name: DialogueManager
@@ -1126,6 +1127,15 @@ MonoBehaviour:
   - {fileID: 1466548846}
   - {fileID: 1213709179}
   animIndex: 0
+  voice: {fileID: 935604383}
+  voiceLine:
+  - {fileID: 8300000, guid: 4afafc4459f89f149bc5225978b25ba1, type: 3}
+  - {fileID: 8300000, guid: 035fc3e35e1221d4f9461de287c41c35, type: 3}
+  - {fileID: 8300000, guid: 1624a1f19dfc9514cb2320905490a14e, type: 3}
+  - {fileID: 8300000, guid: 0aa92cdf225106141aa4746f6f678bcc, type: 3}
+  - {fileID: 8300000, guid: bfe25f9cc740ae14b9d625a0c71c21f4, type: 3}
+  - {fileID: 8300000, guid: 5f16805d6ec22ee4a8f3b950bd038948, type: 3}
+  voiceIndex: 0
   index: 0
   fireEnabled: 0
 --- !u!82 &935604383
@@ -1138,9 +1148,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dc6ce22366f55d84195b52e66d36392f, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.916
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1238,6 +1248,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &935604385
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935604381}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: dc6ce22366f55d84195b52e66d36392f, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &984176797 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7825904244161842602, guid: 3aa891647a7a0624b8be8601edeb01ea,
@@ -2137,13 +2243,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 513384813857953967, guid: c02638bceed390640a142e3a3bfc8690,
-        type: 3}
-      propertyPath: m_Text
-      value: 'v1.14.4
-
-'
-      objectReference: {fileID: 0}
     - target: {fileID: 4815546237130110824, guid: c02638bceed390640a142e3a3bfc8690,
         type: 3}
       propertyPath: m_Camera
@@ -3002,7 +3101,7 @@ PrefabInstance:
     - target: {fileID: 4506503352272369754, guid: be989b33563d3954288a77dc409daf54,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5371382187375016850, guid: be989b33563d3954288a77dc409daf54,
         type: 3}

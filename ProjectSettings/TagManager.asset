@@ -21,6 +21,7 @@ TagManager:
   - Button
   - Enemy
   - Dialogue
+  - Voice
   layers:
   - Default
   - TransparentFX

@@ -52,11 +52,11 @@ public class DamageEnemyBoss : MonoBehaviour
         //if enemy health equals 0, destroy enemy gameobject
         if (currentHP <= 0)
         {
-            SelfDestruct();
-            Instantiate(spawnAmmoInBulk, transform.position, transform.rotation);
-
             if (invoked == false)
             {
+                SelfDestruct();
+                Instantiate(spawnAmmoInBulk, transform.position, transform.rotation);
+
                 GameState gameStateScript = GameObject.FindWithTag("GameState").GetComponent<GameState>();
                 gameStateScript.endLevel = true;
 

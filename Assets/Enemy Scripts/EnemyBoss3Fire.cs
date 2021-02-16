@@ -84,13 +84,13 @@ public class EnemyBoss3Fire : MonoBehaviour
     }
     IEnumerator FireGun3Delay()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.2f);
         CancelInvoke();
 
         yield return new WaitForSeconds(1);
         InvokeRepeating("FireGun3", startDelay3, spawnInterval3 * gameStateScript.spawnIntervalOffset);
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
 
         float delay = 0;
         for (int i = 0; i < 12; i++)
