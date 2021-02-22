@@ -22,6 +22,8 @@ TagManager:
   - Enemy
   - Dialogue
   - Voice
+  - Gun3
+  - Vacuum
   layers:
   - Default
   - TransparentFX

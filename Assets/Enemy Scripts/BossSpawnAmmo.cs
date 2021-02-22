@@ -23,14 +23,14 @@ public class BossSpawnAmmo : MonoBehaviour
         yPos = Random.Range(0.0f, 2.5f);
 
 
-        Instantiate(ammoPack1, transform.position + new Vector3(xPos, yPos, 1), ammoPack1.transform.rotation);
+        Instantiate(ammoPack1, transform.position + new Vector3(xPos, yPos, 0.5f), ammoPack1.transform.rotation);
     }
     public void SpawnAmmo2()
     {
         xPos = Random.Range(0.0f, 3.0f);
         yPos = Random.Range(0.0f, 2.5f);
 
-        Instantiate(ammoPack2, transform.position + new Vector3(xPos, yPos, 1), ammoPack2.transform.rotation);
+        Instantiate(ammoPack2, transform.position + new Vector3(xPos, yPos, 0.5f), ammoPack2.transform.rotation);
     }
     public IEnumerator StopAmmoSpawn()
     {

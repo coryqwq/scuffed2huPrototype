@@ -105,14 +105,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7083487330982451646}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a06bf5d328f2cc4a80647db02a083bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
   position: {x: 0, y: 0, z: 0}
-  speed: 40
+  speed: 10
 --- !u!54 &-4084366416295159897
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -124,7 +124,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 2
   m_AngularDrag: 0
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120

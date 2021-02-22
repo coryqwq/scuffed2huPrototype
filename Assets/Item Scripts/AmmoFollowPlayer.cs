@@ -7,18 +7,31 @@ public class AmmoFollowPlayer : MonoBehaviour
     public float timer = 0;
     public Vector3 position;
     public int speed = 20;
-   
     // Update is called once per frame
+  
     void Update()
     {
-        if(GameObject.FindWithTag("Player") != null)
+
+        /*
+      if(GameObject.FindWithTag("Player") != null)
+      {
+          timer += Time.deltaTime;
+          if (timer > 3)
+          {
+              position = (GameObject.FindWithTag("Player").transform.position + new Vector3(0, 0, 1));
+              transform.position = Vector3.MoveTowards(transform.position, position, speed * Time.deltaTime);
+          }
+      }
+         */
+    }
+
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Vacuum"))
         {
-            timer += Time.deltaTime;
-            if (timer > 3)
-            {
-                position = (GameObject.FindWithTag("Player").transform.position + new Vector3(0, 0, 1));
-                transform.position = Vector3.MoveTowards(transform.position, position, speed * Time.deltaTime);
-            }
+            position = (GameObject.FindWithTag("Player").transform.position + new Vector3(0, 0, 1));
+            transform.position = Vector3.MoveTowards(transform.position, position, speed * Time.deltaTime);
         }
     }
 }

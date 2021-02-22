@@ -38,7 +38,7 @@ public class GunManager : MonoBehaviour
 
     void SwitchGun(int key)
     {
-        //the key pressed for gun1 is 2, for gun2 is 3 
+        //the key pressed for gun1 is 2, for gun2 is 3, for gun3 is 4
         switch (key - 2)
         {
             case 0:
@@ -57,6 +57,14 @@ public class GunManager : MonoBehaviour
                 {
                     Destroy(GameObject.FindGameObjectWithTag("CurrentGun"));
                     temp[1] = Instantiate(guns[key - 2], transform.position, transform.rotation);
+                }
+                break;
+
+            case 2:
+                if (GameObject.Find("Gun3(Clone)") == false)
+                {
+                    Destroy(GameObject.FindGameObjectWithTag("CurrentGun"));
+                    temp[2] = Instantiate(guns[key - 2], transform.position, transform.rotation);
                 }
                 break;
 

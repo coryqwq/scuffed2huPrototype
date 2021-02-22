@@ -297,6 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gun2: {fileID: 2145065474123803967, guid: 1a8a35e6de4bd9b44b7363565a72f0a0, type: 3}
+  gun3: {fileID: 9158925789036666024, guid: 0952c31911d2e9041ab8d14c947df7d5, type: 3}
   gunManagerScript: {fileID: 0}
 --- !u!136 &1677204095
 CapsuleCollider:
@@ -328,7 +329,9 @@ MonoBehaviour:
   guns:
   - {fileID: 6617623468719348156, guid: 35dac0b97f0944b4caf66243f9028ba3, type: 3}
   - {fileID: 6554190699860851656, guid: cf783bdada1a43b4faf97ce6673c8099, type: 3}
+  - {fileID: 6554190699860851656, guid: cf783bdada1a43b4faf97ce6673c8099, type: 3}
   temp:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   num: -1

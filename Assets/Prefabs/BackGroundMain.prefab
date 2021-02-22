@@ -97,4 +97,4 @@ MonoBehaviour:
   bg: {fileID: 4659243526093642313}
   temp: {fileID: 0}
   spawned: 0
-  speed: 40
+  speed: 20

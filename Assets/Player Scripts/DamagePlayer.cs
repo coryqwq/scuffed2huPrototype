@@ -34,10 +34,14 @@ public class DamagePlayer : MonoBehaviour
                 GameState gameStateScript = GameObject.FindWithTag("GameState").GetComponent<GameState>();
                 gameStateScript.isAlive = false;
 
-                Destroy(playerImage.gameObject);
+
                 Destroy(GameObject.Find("Gun1(Clone)"));
                 Destroy(GameObject.Find("Gun2(Clone)"));
+                Destroy(GameObject.Find("Gun3(Clone)"));
                 Destroy(GameObject.Find("empty(Clone)"));
+                Destroy(GameObject.Find("VacuumCompound"));
+
+                Destroy(playerImage.gameObject);
                 Destroy(gameObject);
             }
         }

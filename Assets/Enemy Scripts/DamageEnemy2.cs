@@ -28,7 +28,7 @@ public class DamageEnemy2 : MonoBehaviour
             //if enemy health equals 0, destroy enemy gameobject
             if (HP <= 0)
             {
-                temp = Instantiate(ammoPack2, transform.position + new Vector3(0, 0, 1), ammoPack2.transform.rotation);
+                temp = Instantiate(ammoPack2, transform.position + new Vector3(0, 0, 0.5f), ammoPack2.transform.rotation);
                 spawnManagerScript.StartCoroutine(spawnManagerScript.CountDown(temp));
 
                 ScoreCounter scoreCounterScript = GameObject.FindWithTag("MainCamera").GetComponent<ScoreCounter>();

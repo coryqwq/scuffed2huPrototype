@@ -112,12 +112,14 @@
     <Compile Include="Assets\Item Scripts\TossAmmo.cs" />
     <Compile Include="Assets\Item Scripts\TossProjectile.cs" />
     <Compile Include="Assets\Item Scripts\TurnProjectileToPlayer.cs" />
+    <Compile Include="Assets\Item Scripts\VacuumStatus.cs" />
     <Compile Include="Assets\Player Scripts\CollectAmmo.cs" />
     <Compile Include="Assets\Player Scripts\CollectGun.cs" />
     <Compile Include="Assets\Player Scripts\DamagePlayer.cs" />
     <Compile Include="Assets\Player Scripts\DestroyEnemyProjectile.cs" />
     <Compile Include="Assets\Player Scripts\FireGun1.cs" />
     <Compile Include="Assets\Player Scripts\FireGun2.cs" />
+    <Compile Include="Assets\Player Scripts\FireVacuum.cs" />
     <Compile Include="Assets\Player Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Player Scripts\GunManager.cs" />
     <Compile Include="Assets\Player Scripts\PlayerAngle.cs" />

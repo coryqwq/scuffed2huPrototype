@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FireGun1 : MonoBehaviour
 {
-    public float startDelay = 0.0f;
     public float spawnInterval = 0.05f;
     public float bulletDamage = 2.0f;
     public GameObject projectilePrefab;

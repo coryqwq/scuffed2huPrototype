@@ -114,7 +114,7 @@ public class DialogueManager : MonoBehaviour
             anim[animIndex].SetBool("IsSpeaking", true);
 
             //assign and play voice line
-            voice.Stop();
+            //voice.Stop();
             voice.clip = voiceLine[voiceIndex];
             voice.Play();
             voiceIndex++;
